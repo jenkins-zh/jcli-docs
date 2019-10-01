@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Jenkins CLI</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://jenkins-zh.github.io/jcli-docs/css/styles.css">
+  
+  <link href="/jcli-docs/index.xml" rel="alternate" type="application/rss+xml" title="Jenkins CLI" />
+
+</head>
+<body>
+
+<div class="sidebar sidebar-">
+    <div class="navigation">
+        <div>
+    Kraiklyn
+</div>
+
+        <h1 class="site-title"><a href="https://jenkins-zh.github.io/jcli-docs/">Jenkins CLI</a></h1>
+
+
+        <nav class="internal">
+            <ul>
+    
+        
+            
+    <li>
+        <a href="#quick-start">Quick Start</a>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#plugin">Plugin</a>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#job">Job</a>
+    </li>
+
+
+
+        
+    
+</ul>
+
+        </nav>
+
+        <nav class="external">
+            <div class="external-title"></div>
+            
+        </nav>
+    </div>
+
+    <div class="version">
+            generated on Oct 1, 2019
+    </div>
+</div>
+
+<div class="content">
+    
+        
+            
+    <section class="page" id="quick-start">
+    <h1>
+        <a href="#quick-start">Quick Start</a>
+    </h1>
+    <div class="content">
+        
+
+<h1 id="jcli-document">jcli Document</h1>
+
+<p><code>jcli</code> was written by <a href="https://github.com/golang">golang</a> which could provide you a easy way to manage your Jenkins. Unlike the <a href="https://jenkins.io/doc/book/managing/cli/">build-in cli</a>, <code>jcli</code> allows you manage multiple servers.</p>
+
+<h2 id="how-to-get-it">How to get it</h2>
+
+<p>Read <a href="../README.md">here</a> to get know about how to install <code>jcli</code>.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Once you&rsquo;v installed <code>jcli</code>. You should provide a config file for it. Please execute cmd <code>jcli config generate</code>, this will help you to edit the config file <code>~/.jenkins-cli.yaml</code>. According to your Jenkins configuration to modify this file.</p>
+
+<p>If you want to modify your config file of <code>jcli</code>. You just need to execute <code>jcli config edit</code>.</p>
+
+<p>It&rsquo;s simple to add another Jenkins config item. Here&rsquo;s a sample cmd: <code>jcli config add -n yourJenkinsName --url http://localhost:8080/jenkins --token replacethesampletoken</code>.</p>
+
+    </div>
+</section>
+
+
+
+
+        
+            
+    <section class="page" id="plugin">
+    <h1>
+        <a href="#plugin">Plugin</a>
+    </h1>
+    <div class="content">
+        
+
+<h2 id="plugin-management">Plugin Management</h2>
+
+<p><code>jcli</code> allows you to search, download, install, uninstall or upload a plugin.</p>
+
+<p>First, please search a plugin by a keyword if you want to install it. You can get a plugin list by execute <code>jcli plugin search zh-cn</code>. You can install it with the plugin name.</p>
+
+<p>For example, you can install the Simplified Chinese Localization plugin by <code>jcli plugin install localization-zh-cn</code>.</p>
+
+<h3 id="download-plugins">Download Plugins</h3>
+
+<p>Some times, Jenkins just cannot connect with the offical Update Center. We can use the <code>download</code> sub-cmd to download all the plugins which&rsquo;re you need, then upload them. This command will take care of the dependencies of the plugin.</p>
+
+<p>You can try it:</p>
+
+<p><code>jcli plugin download localization-zh-cn</code></p>
+
+    </div>
+</section>
+
+
+
+
+        
+            
+    <section class="page" id="job">
+    <h1>
+        <a href="#job">Job</a>
+    </h1>
+    <div class="content">
+        
+
+<h2 id="job-management">Job Management</h2>
+
+<p>You can search a job list using a keyword, like this: <code>jcli job search input</code>.</p>
+
+<p>It&rsquo;s very simple to trigger a job. We have the batch mode and interactive mode. This command will finish immediately.</p>
+
+<p><code>jcli job build &quot;folderName jobName&quot; -b</code></p>
+
+<p>Once you triggered a job, then you can watch the log output by <code>jcli job log &quot;zjproject zjproject-inputstep55&quot; -w</code>. This command will always output the log of the last build.</p>
+
+<h2 id="proxy-support">Proxy Support</h2>
+
+<p>Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give <code>jcli</code> a proxy setting. It&rsquo;s also very simple to support a proxy setting. You just need to execute: <code>jcli config edit</code>. Then find the item which you want to add a proxy. Like the below demo:</p>
+
+<pre><code>- name: dev
+  url: http://192.168.1.10
+  username: admin
+  token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2
+  proxy: http://192.168.10.10:47586
+  proxyAuth: username:password
+</code></pre>
+
+    </div>
+</section>
+
+
+
+
+        
+    
+</div>
+</body>
+</html>
+
