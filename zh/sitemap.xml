@@ -3,858 +3,858 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_center/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_center/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_download/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_download/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_download/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_mirror/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_mirror/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_mirror/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_upgrade/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_upgrade/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_upgrade/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_watch/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_watch/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_watch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_watch/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_center_watch/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_completion/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_completion/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_completion/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_completion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_completion/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_completion/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_add/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_add/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_add/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_add/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_add/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_edit/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_edit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_edit/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_generate/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_generate/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_generate/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_generate/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_generate/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_list/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_list/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_list/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_remove/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_remove/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_remove/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_remove/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_remove/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_select/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_select/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_select/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_select/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_config_select/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_crumb/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_crumb/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_crumb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_crumb/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_crumb/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_doc/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_doc/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_doc/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_doc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_doc/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_doc/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact_download/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_build/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_build/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_build/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_build/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_build/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_create/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_create/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_create/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_delete/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_delete/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_delete/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_delete/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_delete/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_edit/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_edit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_edit/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_history/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_history/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_history/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_history/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_history/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_input/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_input/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_input/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_input/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_input/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_log/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_log/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_log/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_log/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_log/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_param/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_param/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_param/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_param/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_param/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_search/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_search/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_search/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_search/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_stop/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_stop/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_stop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_stop/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_stop/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_type/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_type/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_type/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_type/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_job_type/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_open/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_open/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_open/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_open/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_open/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_open/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_check/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_check/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_check/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_create/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_download/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_download/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_install/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_install/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_install/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_list/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_open/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_open/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_open/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_search/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_search/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_search/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_trend/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_trend/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_trend/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_uninstall/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_uninstall/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_uninstall/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upgrade/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upgrade/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upgrade/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upload/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upload/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upload/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_cancel/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_cancel/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_cancel/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_list/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue_list/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_list/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_queue_list/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_restart/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_restart/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_restart/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_restart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_restart/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_restart/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_shell/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_shell/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_shell/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_shell/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_shell/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_shell/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_user/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_user/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_create/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_create/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_create/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_create/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_delete/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_delete/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_delete/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_delete/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_delete/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_edit/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_edit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_edit/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_edit/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_token/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_token/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_token/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_token/"
+                href="http://jcli.jenkins-zh.cn/commands/jcli_user_token/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/zh/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/zh/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/"
+                href="http://jcli.jenkins-zh.cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/zh/"
+                href="http://jcli.jenkins-zh.cn/zh/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/zh/categories/</loc>
+    <loc>http://jcli.jenkins-zh.cn/zh/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/categories/"
+                href="http://jcli.jenkins-zh.cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/zh/categories/"
+                href="http://jcli.jenkins-zh.cn/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/zh/commands/</loc>
-    <lastmod>2019-11-28T14:23:49+00:00</lastmod>
+    <loc>http://jcli.jenkins-zh.cn/zh/commands/</loc>
+    <lastmod>2019-11-28T14:31:43+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/commands/"
+                href="http://jcli.jenkins-zh.cn/commands/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/zh/commands/"
+                href="http://jcli.jenkins-zh.cn/zh/commands/"
                 />
   </url>
   
   <url>
-    <loc>https://jenkins-zh.github.io/jcli-docs/zh/tags/</loc>
+    <loc>http://jcli.jenkins-zh.cn/zh/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jenkins-zh.github.io/jcli-docs/tags/"
+                href="http://jcli.jenkins-zh.cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jenkins-zh.github.io/jcli-docs/zh/tags/"
+                href="http://jcli.jenkins-zh.cn/zh/tags/"
                 />
   </url>
   

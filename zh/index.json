@@ -1,398 +1,398 @@
 [
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli/",
 	"title": "jcli",
 	"tags": [],
 	"description": "",
 	"content": " jcli jcli 是帮助你管理多个 Jenkins 的工具\nSynopsis jcli is Jenkins CLI which could help with your multiple Jenkins, Manage your Jenkins and your pipelines More information could found at https://jenkins-zh.cn\njcli [flags]  Options  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -h, --help help for jcli -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -v, --version 打印 Jenkins CLI 的版本  SEE ALSO  jcli center - 管理你的 Jenkins 更新中心 jcli completion - 生成 bash 自动补全的脚本 jcli config - 管理 jcli 的配置 jcli crumb - Print crumbIssuer of Jenkins jcli doc - 为所有的 jcli 命令生成文档 jcli job - Manage the job of your Jenkins jcli open - Open your Jenkins with a browse jcli plugin - 管理 Jenkins 的插件 jcli queue - Manage the queue of your Jenkins jcli restart - 重启 Jenkins jcli shell - 创建一个子 shell 使得对配置的修改保持在一个上下文中 jcli user - Print the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_center/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_center/",
 	"title": "jcli center",
 	"tags": [],
 	"description": "",
 	"content": " jcli center 管理你的 Jenkins 更新中心\nSynopsis 管理你的 Jenkins 更新中心\njcli center [flags]  Options  -h, --help help for center  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli center download - Download Jenkins jcli center mirror - 设置更新中心为一个镜像地址 jcli center upgrade - Upgrade your Jenkins jcli center watch - Watch your update center status  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_download/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_center_download/",
 	"title": "jcli center download",
 	"tags": [],
 	"description": "",
 	"content": " jcli center download Download Jenkins\nSynopsis Download Jenkins from a mirror site. You can get more mirror sites from https://jenkins-zh.cn/tutorial/management/mirror/\njcli center download [flags]  Options  -h, --help help for download --lts If you want to download Jenkins as LTS (default true) -m, --mirror string The mirror site of Jenkins (default \u0026quot;default\u0026quot;) -o, --output string 输出的文件路径 (default \u0026quot;jenkins.war\u0026quot;) -p, --progress If you want to show the download progress (default true) --war-version string 你希望下载的 Jenkins 版本  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli center - 管理你的 Jenkins 更新中心  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_mirror/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/",
 	"title": "jcli center mirror",
 	"tags": [],
 	"description": "",
 	"content": " jcli center mirror 设置更新中心为一个镜像地址\nSynopsis 设置更新中心为一个镜像地址\njcli center mirror [flags]  Options  --enable 你是否想要启动更新中心 (default true) -h, --help help for mirror --mirror-url string 更新中心的地址 (default \u0026quot;https://updates.jenkins-zh.cn/update-center.json\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli center - 管理你的 Jenkins 更新中心  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_upgrade/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/",
 	"title": "jcli center upgrade",
 	"tags": [],
 	"description": "",
 	"content": " jcli center upgrade Upgrade your Jenkins\nSynopsis Upgrade your Jenkins\njcli center upgrade [flags]  Options  -h, --help help for upgrade  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli center - 管理你的 Jenkins 更新中心  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_center_watch/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_center_watch/",
 	"title": "jcli center watch",
 	"tags": [],
 	"description": "",
 	"content": " jcli center watch Watch your update center status\nSynopsis Watch your update center status\njcli center watch [flags]  Options  --count int Count of watch (default 9999) -h, --help help for watch -i, --interval int Interval of watch (default 1) --util-install-complete The watch will be continue util all Jenkins plugins installation is completed --util-need-restart The watch will be continue util Jenkins needs restart  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli center - 管理你的 Jenkins 更新中心  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_completion/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_completion/",
 	"title": "jcli completion",
 	"tags": [],
 	"description": "",
 	"content": " jcli completion 生成 bash 自动补全的脚本\nSynopsis 生成 bash 自动补全的脚本\njcli completion [flags]  Examples # Installing bash completion on macOS using homebrew ## If running Bash 3.2 included with macOS brew install bash-completion ## or, if running Bash 4.1+ brew install bash-completion@2 ## you may need add the completion to your completion directory jcli completion \u0026gt; $(brew --prefix)/etc/bash_completion.d/jcli ## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83.  Options  -h, --help help for completion  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config/",
 	"title": "jcli config",
 	"tags": [],
 	"description": "",
 	"content": " jcli config 管理 jcli 的配置\nSynopsis 管理 jcli 的配置\njcli config [flags]  Examples  jcli config generate jcli config list jcli config edit  Options  -h, --help help for config  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli config add - 增加一项 Jenkins 配置 jcli config edit - 编辑 Jenkins 配置 jcli config generate - 为你生成一份样本配置文件 jcli config list - 列出所有的 Jenkins 配置项 jcli config remove - Remove a Jenkins config jcli config select - Select one config as current Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_add/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_add/",
 	"title": "jcli config add",
 	"tags": [],
 	"description": "",
 	"content": " jcli config add 增加一项 Jenkins 配置\nSynopsis 增加一项 Jenkins 配置\njcli config add [flags]  Examples jcli config add -n demo  Options  -d, --description string Description of the Jenkins -h, --help help for add -n, --name string Jenkins 的名称 -p, --proxy string Jenkins 的代理 -a, --proxyAuth string Jenkins 链接的代理认证 -t, --token string Jenkins 的令牌 --url string URL of the Jenkins -u, --username string Jenkins 的用户名  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_edit/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_edit/",
 	"title": "jcli config edit",
 	"tags": [],
 	"description": "",
 	"content": " jcli config edit 编辑 Jenkins 配置\nSynopsis 编辑 Jenkins 配置\njcli config edit [flags]  Options  -h, --help help for edit  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_generate/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_generate/",
 	"title": "jcli config generate",
 	"tags": [],
 	"description": "",
 	"content": " jcli config generate 为你生成一份样本配置文件\nSynopsis 为你生成一份样本配置文件\njcli config generate [flags]  Options  -c, --copy 拷贝输出到剪贴板 -h, --help help for generate -i, --interactive 交互模式 (default true)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_list/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_list/",
 	"title": "jcli config list",
 	"tags": [],
 	"description": "",
 	"content": " jcli config list 列出所有的 Jenkins 配置项\nSynopsis 列出所有的 Jenkins 配置项\njcli config list [flags]  Options  -h, --help help for list --no-headers When using the default output format, don't print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default \u0026quot;table\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_remove/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_remove/",
 	"title": "jcli config remove",
 	"tags": [],
 	"description": "",
 	"content": " jcli config remove Remove a Jenkins config\nSynopsis Remove a Jenkins config\njcli config remove \u0026lt;name\u0026gt; [flags]  Options  -h, --help help for remove  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_config_select/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_config_select/",
 	"title": "jcli config select",
 	"tags": [],
 	"description": "",
 	"content": " jcli config select Select one config as current Jenkins\nSynopsis Select one config as current Jenkins\njcli config select [\u0026lt;name\u0026gt;] [flags]  Options  -h, --help help for select  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli config - 管理 jcli 的配置  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_crumb/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_crumb/",
 	"title": "jcli crumb",
 	"tags": [],
 	"description": "",
 	"content": " jcli crumb Print crumbIssuer of Jenkins\nSynopsis Print crumbIssuer of Jenkins\njcli crumb [flags]  Options  -h, --help help for crumb  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_doc/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_doc/",
 	"title": "jcli doc",
 	"tags": [],
 	"description": "",
 	"content": " jcli doc 为所有的 jcli 命令生成文档\nSynopsis 为所有的 jcli 命令生成文档\njcli doc \u0026lt;output dir\u0026gt; [flags]  Options  -h, --help help for doc  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job/",
 	"title": "jcli job",
 	"tags": [],
 	"description": "",
 	"content": " jcli job Manage the job of your Jenkins\nSynopsis Manage the job of your Jenkins Editing the pipeline job needs to install a plugin which is pipeline-restful-api https://plugins.jenkins.io/pipeline-restful-api\nOptions  -h, --help help for job -o, --output string Format the output (default \u0026quot;json\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli job artifact - 输出目标任务的归档文件列表 jcli job build - Build the job of your Jenkins jcli job create - Create a job in your Jenkins jcli job delete - Delete a job in your Jenkins jcli job edit - Edit the job of your Jenkins jcli job history - Print the history of job in your Jenkins jcli job input - Input a job in your Jenkins jcli job log - 输出任务的日志 jcli job param - Get parameters of the job of your Jenkins jcli job search - Print the job of your Jenkins jcli job stop - Stop a job build in your Jenkins jcli job type - Print the types of job which in your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/",
 	"title": "jcli job artifact",
 	"tags": [],
 	"description": "",
 	"content": " jcli job artifact 输出目标任务的归档文件列表\nSynopsis 输出目标任务的归档文件列表\njcli job artifact \u0026lt;jobName\u0026gt; [buildID] [flags]  Options  -h, --help help for artifact --no-headers When using the default output format, don't print headers (default print headers)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins jcli job artifact download - Download the artifact of target job  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_artifact_download/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/",
 	"title": "jcli job artifact download",
 	"tags": [],
 	"description": "",
 	"content": " jcli job artifact download Download the artifact of target job\nSynopsis Download the artifact of target job\njcli job artifact download \u0026lt;jobName\u0026gt; [buildID] [flags]  Options  --download-dir string The directory which artifact will be downloaded -h, --help help for download -i, --id string ID of the job artifact --progress 是否显示进度条 (default true)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job artifact - 输出目标任务的归档文件列表  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_build/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_build/",
 	"title": "jcli job build",
 	"tags": [],
 	"description": "",
 	"content": " jcli job build Build the job of your Jenkins\nSynopsis Build the job of your Jenkins. You need to give the parameters if your pipeline has them. Learn more about it from https://jenkins.io/doc/book/pipeline/syntax/#parameters.\njcli job build \u0026lt;jobName\u0026gt; [flags]  Options  -b, --batch Batch mode, no need to confirm -h, --help help for build --param string Parameters of the job which is JSON format --param-entry stringArray Parameters of the job which are the entry format, for example: --param-entry name=value  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_create/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_create/",
 	"title": "jcli job create",
 	"tags": [],
 	"description": "",
 	"content": " jcli job create Create a job in your Jenkins\nSynopsis Create a job in your Jenkins\njcli job create \u0026lt;jobName\u0026gt; [flags]  Options  --copy string Copy an exists job -h, --help help for create --type string Which type do you want to create  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_delete/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_delete/",
 	"title": "jcli job delete",
 	"tags": [],
 	"description": "",
 	"content": " jcli job delete Delete a job in your Jenkins\nSynopsis Delete a job in your Jenkins\njcli job delete \u0026lt;jobName\u0026gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_edit/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_edit/",
 	"title": "jcli job edit",
 	"tags": [],
 	"description": "",
 	"content": " jcli job edit Edit the job of your Jenkins\nSynopsis Edit the job of your Jenkins. We only support to edit the pipeline job.\njcli job edit \u0026lt;jobName\u0026gt; [flags]  Options  -f, --filename string Filename to files to use to replace pipeline -h, --help help for edit -s, --script string Script to use to replace pipeline. Use script first if you give filename at the meantime. --url string URL of the Jenkinsfile to files to use to replace pipeline  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_history/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_history/",
 	"title": "jcli job history",
 	"tags": [],
 	"description": "",
 	"content": " jcli job history Print the history of job in your Jenkins\nSynopsis Print the history of job in your Jenkins\njcli job history \u0026lt;jobName\u0026gt; [flags]  Options  -h, --help help for history --no-headers When using the default output format, don't print headers (default print headers)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_input/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_input/",
 	"title": "jcli job input",
 	"tags": [],
 	"description": "",
 	"content": " jcli job input Input a job in your Jenkins\nSynopsis Input a job in your Jenkins\njcli job input \u0026lt;jobName\u0026gt; [buildID] [flags]  Options  --action string The action whether you want to process or abort. -h, --help help for input  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_log/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_log/",
 	"title": "jcli job log",
 	"tags": [],
 	"description": "",
 	"content": " jcli job log 输出任务的日志\nSynopsis Print the job\u0026rsquo;s log of your Jenkins It\u0026rsquo;ll print the log text of the last build if you don\u0026rsquo;t give the build id.\njcli job log \u0026lt;jobName\u0026gt; [buildID] [flags]  Options  -h, --help help for log -s, --history int Specific build history of log (default -1) -i, --interval int Interval of watch (default 1) -w, --watch Watch the job logs  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_param/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_param/",
 	"title": "jcli job param",
 	"tags": [],
 	"description": "",
 	"content": " jcli job param Get parameters of the job of your Jenkins\nSynopsis Get parameters of the job of your Jenkins\njcli job param \u0026lt;jobName\u0026gt; [flags]  Options  -h, --help help for param --indent Output with indent --no-headers When using the default output format, don't print headers (default print headers)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_search/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_search/",
 	"title": "jcli job search",
 	"tags": [],
 	"description": "",
 	"content": " jcli job search Print the job of your Jenkins\nSynopsis Print the job of your Jenkins\njcli job search [keyword] [flags]  Options  --all Print all items if there's no keyword -h, --help help for search --max int 输出的数量限制 (default 10)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_stop/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_stop/",
 	"title": "jcli job stop",
 	"tags": [],
 	"description": "",
 	"content": " jcli job stop Stop a job build in your Jenkins\nSynopsis Stop a job build in your Jenkins\njcli job stop \u0026lt;jobName\u0026gt; [buildNumber] [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for stop  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_job_type/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_job_type/",
 	"title": "jcli job type",
 	"tags": [],
 	"description": "",
 	"content": " jcli job type Print the types of job which in your Jenkins\nSynopsis Print the types of job which in your Jenkins\njcli job type [flags]  Options  -h, --help help for type  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;) -o, --output string Format the output (default \u0026quot;json\u0026quot;)  SEE ALSO  jcli job - Manage the job of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_open/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_open/",
 	"title": "jcli open",
 	"tags": [],
 	"description": "",
 	"content": " jcli open Open your Jenkins with a browse\nSynopsis Open your Jenkins with a browse\njcli open [config name] [flags]  Examples jcli open -n \u0026lt;config name\u0026gt;  Options  -c, --config Open the configuration page of Jenkins -h, --help help for open -i, --interactive 交互模式 -n, --name string Open a specific Jenkins by name  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin/",
 	"title": "jcli plugin",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin 管理 Jenkins 的插件\nSynopsis 管理 Jenkins 的插件\nExamples  jcli plugin list jcli plugin search github jcli plugin check  Options  -h, --help help for plugin  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli plugin check - 检查插件更新中心 jcli plugin create - 根据 Maven 骨架创建插件工程 jcli plugin download - 下载插件 jcli plugin install - 安装插件 jcli plugin list - 输出已经安装的插件 jcli plugin open - Open update center server jcli plugin search - 搜索插件 jcli plugin trend - Show the trend of the plugin jcli plugin uninstall - 卸载插件 jcli plugin upgrade - 升级指定插件 jcli plugin upload - 上传插件到你的 Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_check/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/",
 	"title": "jcli plugin check",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin check 检查插件更新中心\nSynopsis 检查插件更新中心\njcli plugin check [flags]  Options  -h, --help help for check  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_create/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/",
 	"title": "jcli plugin create",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin create 根据 Maven 骨架创建插件工程\nSynopsis Create a plugin project from the archetypes Plugin tutorial is here https://jenkins.io/doc/developer/tutorial/\njcli plugin create [flags]  Options  --debug-output If you want the maven output the debug info -h, --help help for create  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_download/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/",
 	"title": "jcli plugin download",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin download 下载插件\nSynopsis 下载插件及其依赖\njcli plugin download \u0026lt;keyword\u0026gt; [flags]  Options  -h, --help help for download --show-progress 你是否希望显示插件下载的进度 (default true) --skip-dependency 你是否想要跳过下载依赖插件 --skip-optional If you want to skip download optional dependency of plugin (default true) --use-mirror 你是否想要从镜像站点下载插件 (default true)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_install/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/",
 	"title": "jcli plugin install",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin install 安装插件\nSynopsis Install the plugins Allow you to install a plugin with or without the version\njcli plugin install [pluginName] [flags]  Examples jcli plugin install localization-zh-cn jcli plugin install localization-zh-cn@1.0.9  Options  -h, --help help for install --show-progress 你是否希望显示插件下载的进度 (default true) --suite string Suite of plugins --use-mirror 你是否想要从镜像站点下载插件 (default true)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_list/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/",
 	"title": "jcli plugin list",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin list 输出已经安装的插件\nSynopsis 输出已经安装的插件\njcli plugin list [flags]  Examples  jcli plugin list --filter name=github jcli plugin list --filter hasUpdate jcli plugin list --no-headers  Options  --filter stringArray Filter for the list, like: active, hasUpdate, downgradable, enable, name=foo -h, --help help for list --no-headers When using the default output format, don't print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default \u0026quot;table\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_open/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/",
 	"title": "jcli plugin open",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin open Open update center server\nSynopsis Open update center server\njcli plugin open [flags]  Options  -h, --help help for open  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_search/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/",
 	"title": "jcli plugin search",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin search 搜索插件\nSynopsis 搜索插件\njcli plugin search \u0026lt;keyword\u0026gt; [flags]  Options  -h, --help help for search --no-headers When using the default output format, don't print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default \u0026quot;table\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_trend/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/",
 	"title": "jcli plugin trend",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin trend Show the trend of the plugin\nSynopsis Show the trend of the plugin\njcli plugin trend \u0026lt;pluginName\u0026gt; [flags]  Options  -h, --help help for trend  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_uninstall/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/",
 	"title": "jcli plugin uninstall",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin uninstall 卸载插件\nSynopsis 卸载插件\njcli plugin uninstall [pluginName] [flags]  Options  -h, --help help for uninstall  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upgrade/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/",
 	"title": "jcli plugin upgrade",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin upgrade 升级指定插件\nSynopsis 升级指定插件\njcli plugin upgrade [plugin name] [flags]  Examples jcli plugin upgrade [tab][tab]  Options  --filter stringArray Filter for the list, like: name=foo -h, --help help for upgrade  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_plugin_upload/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/",
 	"title": "jcli plugin upload",
 	"tags": [],
 	"description": "",
 	"content": " jcli plugin upload 上传插件到你的 Jenkins\nSynopsis 上传来自本地文件系统或者远程 URL 的插件到你的 Jenkins\njcli plugin upload [flags]  Examples  jcli plugin upload --remote https://server/sample.hpi jcli plugin upload sample.hpi jcli plugin upload sample.hpi --show-progress=false  Options  -h, --help help for upload -r, --remote string 远程插件 URL --remote-jenkins string Remote Jenkins which will find from config list --remote-password string 远程插件的秘密 --remote-user string User of remote plugin URL --show-progress 是否显示上传进度 (default true) --skip-posthook 是否跳过后置命令钩子 --skip-prehook 是否跳过前置命令钩子  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli plugin - 管理 Jenkins 的插件  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_queue/",
 	"title": "jcli queue",
 	"tags": [],
 	"description": "",
 	"content": " jcli queue Manage the queue of your Jenkins\nSynopsis Manage the queue of your Jenkins\nOptions  -h, --help help for queue  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli queue cancel - Cancel the queue of your Jenkins jcli queue list - Print the queue of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_cancel/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/",
 	"title": "jcli queue cancel",
 	"tags": [],
 	"description": "",
 	"content": " jcli queue cancel Cancel the queue of your Jenkins\nSynopsis Cancel the queue of your Jenkins\njcli queue cancel \u0026lt;id\u0026gt; [flags]  Options  -h, --help help for cancel  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli queue - Manage the queue of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_queue_list/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_queue_list/",
 	"title": "jcli queue list",
 	"tags": [],
 	"description": "",
 	"content": " jcli queue list Print the queue of your Jenkins\nSynopsis Print the queue of your Jenkins\njcli queue list [flags]  Options  -h, --help help for list --no-headers When using the default output format, don't print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default \u0026quot;table\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli queue - Manage the queue of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_restart/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_restart/",
 	"title": "jcli restart",
 	"tags": [],
 	"description": "",
 	"content": " jcli restart 重启 Jenkins\nSynopsis 重启 Jenkins\njcli restart [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for restart  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_shell/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_shell/",
 	"title": "jcli shell",
 	"tags": [],
 	"description": "",
 	"content": " jcli shell 创建一个子 shell 使得对配置的修改保持在一个上下文中\nSynopsis 创建一个子 shell 使得对配置的修改保持在一个上下文中\njcli shell [\u0026lt;name\u0026gt;] [flags]  Options  -h, --help help for shell  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_user/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_user/",
 	"title": "jcli user",
 	"tags": [],
 	"description": "",
 	"content": " jcli user Print the user of your Jenkins\nSynopsis Print the user of your Jenkins\njcli user [flags]  Options  -h, --help help for user -o, --output string Format the output (default \u0026quot;json\u0026quot;)  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli - jcli 是帮助你管理多个 Jenkins 的工具 jcli user create - Create a user for your Jenkins jcli user delete - Delete a user for your Jenkins jcli user edit - Edit the user of your Jenkins jcli user token - Token the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_create/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_user_create/",
 	"title": "jcli user create",
 	"tags": [],
 	"description": "",
 	"content": " jcli user create Create a user for your Jenkins\nSynopsis Create a user for your Jenkins\njcli user create \u0026lt;username\u0026gt; [password] [flags]  Options  -h, --help help for create  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli user - Print the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_delete/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_user_delete/",
 	"title": "jcli user delete",
 	"tags": [],
 	"description": "",
 	"content": " jcli user delete Delete a user for your Jenkins\nSynopsis Delete a user for your Jenkins\njcli user delete \u0026lt;username\u0026gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli user - Print the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_edit/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_user_edit/",
 	"title": "jcli user edit",
 	"tags": [],
 	"description": "",
 	"content": " jcli user edit Edit the user of your Jenkins\nSynopsis Edit the user of your Jenkins\njcli user edit [flags]  Options  -d, --desc Edit the description -h, --help help for edit  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli user - Print the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/commands/jcli_user_token/",
+	"uri": "http://jcli.jenkins-zh.cn/commands/jcli_user_token/",
 	"title": "jcli user token",
 	"tags": [],
 	"description": "",
 	"content": " jcli user token Token the user of your Jenkins\nSynopsis Token the user of your Jenkins\njcli user token -g [flags]  Options  -g, --generate Generate the token -h, --help help for token -n, --name string Name of the token  Options inherited from parent commands  --configFile string 指定另外一个配置文件 --debug Print the output into debug.html -j, --jenkins string 选择本次执行的 Jenkins --logger-level string Logger level which could be: debug, info, warn, error (default \u0026quot;warn\u0026quot;)  SEE ALSO  jcli user - Print the user of your Jenkins  "
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/zh/",
+	"uri": "http://jcli.jenkins-zh.cn/zh/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " Jenkins CLI 可以帮忙你轻松地管理 Jenkins。不管你是一名插件开发者、管理员或者只是一个普通的 Jenkins 用户，它都是为你而生的！\n特性  支持多 Jenkins 实例管理 插件管理（查看列表、搜索、安装、上传） 任务管理（搜索、构建触发、日志查看） 在浏览器中打开你的 Jenkins 重启你的 Jenkins 支持通过代理连接  安装 我们目前支持的操作系统包括：MacOS、Linux 以及 Widnows。\nmac 你可以通过 brew 来安装 jcli。\nbrew tap jenkins-zh/jcli brew install jcli  Linux 要在 Linux 操作系统上安装 jcli 的话，非常简单。只需要执行下面的命令即可：\ncurl -L https://github.com/jenkins-zh/jenkins-cli/releases/latest/download/jcli-linux-amd64.tar.gz|tar xzv sudo mv jcli /usr/local/bin/  Windows 你只要点击这里就可以下载到最新版本的压缩包。之后，把解压后的文件 jcli 拷贝到你的系统目录下即可。\n其他包管理器 这里还有一些其他的包管理器：\n GoFish 的用户可以使用命令 gofish install jcli 来安装 Scoop 的用户可以使用命令 scoop install jcli 来安装  入门 当安装 jcli 以后。你需要提供一份配置文件。请执行命令 jcli config generate，该命令会帮助你编辑配置文件 ~/.jenkins-cli.yaml ，你需要根据实际的 Jenkins 配置情况做相应的修改。\n贡献 如果你对该项目感兴趣，请首先仔细阅读我们的贡献指南。我们欢迎任何形式的贡献。\n"
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/zh/categories/",
+	"uri": "http://jcli.jenkins-zh.cn/zh/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/zh/commands/",
+	"uri": "http://jcli.jenkins-zh.cn/zh/commands/",
 	"title": "Commands",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://jenkins-zh.github.io/jcli-docs/zh/tags/",
+	"uri": "http://jcli.jenkins-zh.cn/zh/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

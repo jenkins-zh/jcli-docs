@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quick Start on Jenkins CLI</title>
-    <link>https://jenkins-zh.github.io/jcli-docs/quickstart/</link>
+    <link>http://jcli.jenkins-zh.cn/quickstart/</link>
     <description>Recent content in Quick Start on Jenkins CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jan 2018 21:58:09 +0100</lastBuildDate>
     
-	<atom:link href="https://jenkins-zh.github.io/jcli-docs/quickstart/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jcli.jenkins-zh.cn/quickstart/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

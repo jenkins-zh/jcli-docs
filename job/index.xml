@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Job on Jenkins CLI</title>
-    <link>https://jenkins-zh.github.io/jcli-docs/job/</link>
+    <link>http://jcli.jenkins-zh.cn/job/</link>
     <description>Recent content in Job on Jenkins CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jenkins-zh.github.io/jcli-docs/job/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jcli.jenkins-zh.cn/job/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
