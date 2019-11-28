@@ -1,2615 +1,2324 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head>
-  <meta name="generator" content="Hugo 0.53" />
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="description" content="">
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Jenkins CLI</title>
+    <link rel="icon" href="/jcli-docs/images/favicon.png" type="image/png">
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://jenkins-zh.github.io/jcli-docs/css/styles.css">
+    <title> :: Jenkins CLI</title>
+
+    
+    <link href="/jcli-docs/css/nucleus.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/fontawesome-all.min.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/hybrid.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/featherlight.min.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/perfect-scrollbar.min.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/auto-complete.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/atom-one-dark-reasonable.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/theme.css?1574951031" rel="stylesheet">
+    <link href="/jcli-docs/css/hugo-theme.css?1574951031" rel="stylesheet">
+    
+
+    <script src="/jcli-docs/js/jquery-3.3.1.min.js?1574951031"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/jcli-docs/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://jenkins-zh.github.io/jcli-docs/">
+  <svg id="grav-logo" style="width:100%; height:100%;" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path d="M235.832,71.564l-7.98,-0.001c-1.213,0.001 -2.197,0.987 -2.197,2.204l0,15.327l-0.158,0.132c-4.696,3.962 -10.634,6.14 -16.719,6.14c-14.356,0 -26.034,-11.68 -26.034,-26.037c0,-14.358 11.678,-26.035 26.034,-26.035c5.582,0 10.919,1.767 15.437,5.113c0.877,0.649 2.093,0.56 2.866,-0.211l5.69,-5.69c0.444,-0.442 0.675,-1.055 0.639,-1.681c-0.034,-0.627 -0.336,-1.206 -0.828,-1.597c-6.76,-5.363 -15.214,-8.314 -23.805,-8.314c-21.18,0 -38.414,17.233 -38.414,38.415c0,21.183 17.234,38.415 38.414,38.415c10.937,0 21.397,-4.705 28.698,-12.914c0.358,-0.403 0.556,-0.921 0.556,-1.46l0,-19.603c0,-1.217 -0.985,-2.203 -2.2,-2.203"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M502.794,34.445c-0.408,-0.616 -1.1,-0.989 -1.838,-0.989l-8.684,0c-0.879,0 -1.673,0.522 -2.022,1.329l-24.483,56.839l-24.92,-56.852c-0.352,-0.799 -1.142,-1.316 -2.012,-1.316l-8.713,0c-0.744,0 -1.44,0.373 -1.843,0.995c-0.408,0.623 -0.476,1.408 -0.174,2.09l30.186,68.858c0.352,0.799 1.143,1.317 2.017,1.317l10.992,0c0.879,0 1.673,-0.527 2.021,-1.329l29.655,-68.861c0.289,-0.68 0.222,-1.461 -0.182,-2.081"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M388.683,34.772c-0.353,-0.798 -1.142,-1.316 -2.017,-1.316l-10.988,0c-0.879,0 -1.673,0.522 -2.021,1.329l-29.655,68.861c-0.294,0.675 -0.226,1.46 0.182,2.077c0.407,0.619 1.096,0.993 1.838,0.993l8.684,0c0.879,0 1.673,-0.526 2.022,-1.329l24.478,-56.842l24.92,56.854c0.353,0.798 1.143,1.317 2.013,1.317l8.717,0c0.744,0 1.44,-0.374 1.843,-0.993c0.408,-0.624 0.471,-1.41 0.174,-2.094l-30.19,-68.857Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M309.196,81.525l0.476,-0.229c8.675,-4.191 14.279,-13.087 14.279,-22.667c0,-13.881 -11.295,-25.174 -25.176,-25.174l-31.863,0c-1.214,0 -2.199,0.988 -2.199,2.202l0,68.855c0,1.219 0.985,2.204 2.199,2.204l7.979,0c1.214,0 2.2,-0.985 2.2,-2.204l0,-58.679l21.684,0c7.059,0 12.799,5.739 12.799,12.796c0,5.885 -3.996,10.989 -9.728,12.408c-1.032,0.261 -2.064,0.393 -3.071,0.393l-7.977,0c-0.829,0 -1.585,0.467 -1.959,1.205c-0.378,0.74 -0.305,1.625 0.187,2.296l22.62,30.884c0.412,0.566 1.07,0.901 1.771,0.901l9.915,0c0.827,0 1.587,-0.467 1.96,-1.207c0.378,-0.742 0.302,-1.629 -0.186,-2.296l-15.91,-21.688Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M107.191,80.969c-7.255,-4.794 -11.4,-8.845 -15.011,-16.109c-2.47,4.977 -8.236,12.376 -17.962,18.198c-4.856,15.106 -27.954,44.015 -35.43,39.916c-2.213,-1.212 -2.633,-2.808 -2.133,-4.456c0.536,-4.129 9.078,-13.62 9.078,-13.62c0,0 0.18,1.992 2.913,6.187c-3.609,-11.205 5.965,-25.031 8.5,-29.738c3.985,-1.269 4.274,-6.387 4.274,-6.387c0.255,-7.909 -3.278,-13.635 -6.701,-17.059c2.459,3.002 3.255,7.539 3.372,11.694l0,0.023c0.012,0.469 0.012,0.93 0.011,1.39c-0.117,3.439 -1.157,8.19 -3.383,8.19l0.006,0.03c-2.289,-0.098 -5.115,0.391 -7.639,1.18l-5.582,1.334c0,0 2.977,-0.136 4.584,1.252c-1.79,2.915 -5.769,6.533 -10.206,8.588c-6.457,2.995 -8.312,-2.964 -5.034,-6.838c0.805,-0.946 1.618,-1.745 2.387,-2.399c-0.495,-0.513 -0.807,-1.198 -0.889,-2.068c-0.001,-0.005 -0.004,-0.009 -0.005,-0.013c-0.45,-1.977 -0.202,-4.543 2.596,-8.623c0.551,-0.863 1.214,-1.748 2.007,-2.647c0.025,-0.031 0.046,-0.059 0.072,-0.089c0.034,-0.042 0.072,-0.08 0.108,-0.121c0.02,-0.023 0.039,-0.045 0.059,-0.068c0.2,-0.228 0.413,-0.45 0.639,-0.663c3.334,-3.414 8.599,-6.966 16.897,-10.152c9.675,-14.223 13.219,-16.89 13.219,-16.89c1.071,-1.096 2.943,-2.458 3.632,-2.805c-5.053,-8.781 -6.074,-21.158 -4.75,-24.493c-0.107,0.18 -0.206,0.365 -0.287,0.556c0.49,-1.143 0.819,-1.509 1.328,-2.111c1.381,-1.632 6.058,-2.488 7.737,0.971c0.895,1.844 1.063,4.232 1.034,6.023c-3.704,-0.193 -7.063,4.036 -7.063,4.036c0,0 3.067,-1.448 6.879,-1.473c0,0 1.015,0.883 2.283,2.542c-1.712,3.213 -4.524,10.021 -2.488,17.168c0.338,1.408 0.849,2.619 1.483,3.648c0.024,0.045 0.044,0.089 0.069,0.135c0.051,0.066 0.096,0.122 0.144,0.183c3.368,5.072 9.542,5.665 9.542,5.665c-2.906,-1.45 -5.274,-3.76 -6.816,-6.56c-0.8,-1.498 -1.291,-2.762 -1.592,-3.761c-1.636,-6.313 0.771,-9.999 2.149,-12.471c3.17,-4.917 8.944,-7.893 15.151,-7.185c8.712,0.995 14.968,8.862 13.973,17.571c-0.608,5.321 -3.781,9.723 -8.142,12.117c1.049,2.839 -0.073,6.28 -0.073,6.28c2.642,3.323 2.758,5.238 2.667,7.017c-3.357,-0.565 -6.618,1.701 -6.618,1.701c0,0 6.476,-1.546 10.238,1.81c2.446,2.631 4.078,5.009 5.051,6.766c1.393,2.505 7.859,2.683 7.123,7.188c-0.737,4.499 -5.669,4.542 -13.401,-0.56M69.571,0c-38.424,0 -69.571,31.148 -69.571,69.567c0,38.422 31.147,69.573 69.571,69.573c38.42,0 69.568,-31.151 69.568,-69.573c0,-38.42 -31.148,-69.567 -69.568,-69.567"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M73.796,51.693c0.813,-0.814 0.813,-2.134 0,-2.947c-0.815,-0.814 -2.133,-0.814 -2.947,0c-0.815,0.813 -0.815,2.133 0,2.947c0.814,0.813 2.132,0.813 2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M66.445,53.149c-0.814,0.813 -0.814,2.133 0,2.947c0.813,0.814 2.133,0.814 2.947,0c0.813,-0.814 0.813,-2.134 0,-2.947c-0.814,-0.813 -2.134,-0.813 -2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M79.231,54.233c-1.274,-1.274 -3.339,-1.272 -4.611,0l-2.713,2.712c-1.274,1.275 -1.274,3.339 0,4.612l2.978,2.978c1.274,1.275 3.338,1.274 4.611,0l2.712,-2.712c1.274,-1.274 1.274,-3.339 0,-4.612l-2.977,-2.978Z" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M95.759,41.445c-2.151,-2.578 1.869,-7.257 4.391,-4.463c4.645,5.148 -2.237,7.041 -4.391,4.463M105.004,44.132c3.442,-6.553 -1.427,-10.381 -4.773,-13.523c-5.36,-5.039 -10.706,-7.217 -16.811,-0.241c-6.102,6.977 -2.226,15.068 3.356,19.061c5.584,3.994 14.782,1.255 18.228,-5.297"
+      style="fill:#000;fill-rule:nonzero;"></path>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/jcli-docs/js/lunr.min.js?1574951031"></script>
+<script type="text/javascript" src="/jcli-docs/js/auto-complete.js?1574951031"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/jenkins-zh.github.io\/jcli-docs\/";
+    
+</script>
+<script type="text/javascript" src="/jcli-docs/js/search.js?1574951031"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
   
-  <link href="/jcli-docs/index.xml" rel="alternate" type="application/rss+xml" title="Jenkins CLI" />
-
-</head>
-<body>
-
-<div class="sidebar sidebar-">
-    <div class="navigation">
-        <div>
-    Kraiklyn
-</div>
-
-        <h1 class="site-title"><a href="https://jenkins-zh.github.io/jcli-docs/">Jenkins CLI</a></h1>
-
-
-        <nav class="internal">
-            <ul>
     
+    <li data-nav-id="/jcli-docs/quickstart/" title="Quick Start" class="dd-item 
         
-            
-    <li>
-        <a href="#quick-start">Quick Start</a>
+        
+        
+        ">
+      <a href="/jcli-docs/quickstart/">
+          Quick Start
+          
+      </a>
+      
+              
     </li>
+  
+ 
+
+          
+          
 
 
-
+ 
+  
+    
+    <li data-nav-id="/jcli-docs/plugin/" title="Plugin" class="dd-item 
         
-            
-    <li>
-        <a href="#plugin">Plugin</a>
+        
+        
+        ">
+      <a href="/jcli-docs/plugin/">
+          Plugin
+          
+      </a>
+      
+              
     </li>
+  
+ 
+
+          
+          
 
 
-
+ 
+  
+    
+    <li data-nav-id="/jcli-docs/job/" title="Job" class="dd-item 
         
-            
-    <li>
-        <a href="#job">Job</a>
+        
+        
+        ">
+      <a href="/jcli-docs/job/">
+          Job
+          
+      </a>
+      
+              
     </li>
+  
+ 
+
+          
+          
 
 
-
+ 
+  
+    
+    <li data-nav-id="/jcli-docs/commands/" title="Commands" class="dd-item 
         
-            
-    <li>
-        <a href="#">Commands</a>
+        
+        
+        ">
+      <a href="/jcli-docs/commands/">
+          Commands
+          
+      </a>
+      
+      
         <ul>
+          
+          
+          
+          
+        
+          
             
             
-                <li><a href="#jcli">jcli</a></li>
-            
-                <li><a href="#jcli_center">jcli center</a></li>
-            
-                <li><a href="#jcli_center_download">jcli center download</a></li>
-            
-                <li><a href="#jcli_center_upgrade">jcli center upgrade</a></li>
-            
-                <li><a href="#jcli_center_watch">jcli center watch</a></li>
-            
-                <li><a href="#jcli_completion">jcli completion</a></li>
-            
-                <li><a href="#jcli_config">jcli config</a></li>
-            
-                <li><a href="#jcli_config_add">jcli config add</a></li>
-            
-                <li><a href="#jcli_config_edit">jcli config edit</a></li>
-            
-                <li><a href="#jcli_config_generate">jcli config generate</a></li>
-            
-                <li><a href="#jcli_config_list">jcli config list</a></li>
-            
-                <li><a href="#jcli_config_remove">jcli config remove</a></li>
-            
-                <li><a href="#jcli_config_select">jcli config select</a></li>
-            
-                <li><a href="#jcli_crumb">jcli crumb</a></li>
-            
-                <li><a href="#jcli_doc">jcli doc</a></li>
-            
-                <li><a href="#jcli_job">jcli job</a></li>
-            
-                <li><a href="#jcli_job_artifact">jcli job artifact</a></li>
-            
-                <li><a href="#jcli_job_artifact_download">jcli job artifact download</a></li>
-            
-                <li><a href="#jcli_job_build">jcli job build</a></li>
-            
-                <li><a href="#jcli_job_create">jcli job create</a></li>
-            
-                <li><a href="#jcli_job_delete">jcli job delete</a></li>
-            
-                <li><a href="#jcli_job_edit">jcli job edit</a></li>
-            
-                <li><a href="#jcli_job_history">jcli job history</a></li>
-            
-                <li><a href="#jcli_job_input">jcli job input</a></li>
-            
-                <li><a href="#jcli_job_log">jcli job log</a></li>
-            
-                <li><a href="#jcli_job_param">jcli job param</a></li>
-            
-                <li><a href="#jcli_job_search">jcli job search</a></li>
-            
-                <li><a href="#jcli_job_stop">jcli job stop</a></li>
-            
-                <li><a href="#jcli_job_type">jcli job type</a></li>
-            
-                <li><a href="#jcli_open">jcli open</a></li>
-            
-                <li><a href="#jcli_plugin">jcli plugin</a></li>
-            
-                <li><a href="#jcli_plugin_check">jcli plugin check</a></li>
-            
-                <li><a href="#jcli_plugin_download">jcli plugin download</a></li>
-            
-                <li><a href="#jcli_plugin_install">jcli plugin install</a></li>
-            
-                <li><a href="#jcli_plugin_list">jcli plugin list</a></li>
-            
-                <li><a href="#jcli_plugin_open">jcli plugin open</a></li>
-            
-                <li><a href="#jcli_plugin_search">jcli plugin search</a></li>
-            
-                <li><a href="#jcli_plugin_trend">jcli plugin trend</a></li>
-            
-                <li><a href="#jcli_plugin_uninstall">jcli plugin uninstall</a></li>
-            
-                <li><a href="#jcli_plugin_upgrade">jcli plugin upgrade</a></li>
-            
-                <li><a href="#jcli_plugin_upload">jcli plugin upload</a></li>
-            
-                <li><a href="#jcli_queue">jcli queue</a></li>
-            
-                <li><a href="#jcli_queue_cancel">jcli queue cancel</a></li>
-            
-                <li><a href="#jcli_queue_list">jcli queue list</a></li>
-            
-                <li><a href="#jcli_restart">jcli restart</a></li>
-            
-                <li><a href="#jcli_user">jcli user</a></li>
-            
-                <li><a href="#jcli_user_create">jcli user create</a></li>
-            
-                <li><a href="#jcli_user_delete">jcli user delete</a></li>
-            
-                <li><a href="#jcli_user_edit">jcli user edit</a></li>
-            
-                <li><a href="#jcli_user_token">jcli user token</a></li>
-            
-        </ul>
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli/" title="jcli" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli/">
+        jcli
+        
+        </a>
     </li>
+     
+  
+ 
+
+            
+          
+            
+            
 
 
-
-        
+ 
+  
     
-</ul>
+      <li data-nav-id="/jcli-docs/commands/jcli_center/" title="jcli center" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_center/">
+        jcli center
+        
+        </a>
+    </li>
+     
+  
+ 
 
-        </nav>
-
-        <nav class="external">
-            <div class="external-title"></div>
             
-        </nav>
-    </div>
+          
+            
+            
 
-    <div class="version">
-            generated on Nov 26, 2019
-    </div>
-</div>
 
-<div class="content">
+ 
+  
     
+      <li data-nav-id="/jcli-docs/commands/jcli_center_download/" title="jcli center download" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_center_download/">
+        jcli center download
         
+        </a>
+    </li>
+     
+  
+ 
+
             
-    <section class="page" id="quick-start">
-    <h1>
-        <a href="#quick-start">Quick Start</a>
-    </h1>
-    <div class="content">
-        
-
-<h1 id="jcli-document">jcli Document</h1>
-
-<p><code>jcli</code> was written by <a href="https://github.com/golang">golang</a> which could provide you a easy way to manage your Jenkins. Unlike the <a href="https://jenkins.io/doc/book/managing/cli/">build-in cli</a>, <code>jcli</code> allows you manage multiple servers.</p>
-
-<h2 id="how-to-get-it">How to get it</h2>
-
-<p>Read <a href="../README.md">here</a> to get know about how to install <code>jcli</code>.</p>
-
-<h2 id="configuration">Configuration</h2>
-
-<p>Once you&rsquo;v installed <code>jcli</code>. You should provide a config file for it. Please execute cmd <code>jcli config generate</code>, this will help you to edit the config file <code>~/.jenkins-cli.yaml</code>. According to your Jenkins configuration to modify this file.</p>
-
-<p>If you want to modify your config file of <code>jcli</code>. You just need to execute <code>jcli config edit</code>.</p>
-
-<p>It&rsquo;s simple to add another Jenkins config item. Here&rsquo;s a sample cmd: <code>jcli config add -n yourJenkinsName --url http://localhost:8080/jenkins --token replacethesampletoken</code>.</p>
-
-    </div>
-</section>
-
-
-
-
-        
+          
             
-    <section class="page" id="plugin">
-    <h1>
-        <a href="#plugin">Plugin</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="plugin-management">Plugin Management</h2>
-
-<p><code>jcli</code> allows you to search, download, install, uninstall or upload a plugin.</p>
-
-<p>First, please search a plugin by a keyword if you want to install it. You can get a plugin list by execute <code>jcli plugin search zh-cn</code>. You can install it with the plugin name.</p>
-
-<p>For example, you can install the Simplified Chinese Localization plugin by <code>jcli plugin install localization-zh-cn</code>.</p>
-
-<h3 id="download-plugins">Download Plugins</h3>
-
-<p>Some times, Jenkins just cannot connect with the offical Update Center. We can use the <code>download</code> sub-cmd to download all the plugins which&rsquo;re you need, then upload them. This command will take care of the dependencies of the plugin.</p>
-
-<p>You can try it:</p>
-
-<p><code>jcli plugin download localization-zh-cn</code></p>
-
-    </div>
-</section>
-
-
-
-
-        
             
-    <section class="page" id="job">
-    <h1>
-        <a href="#job">Job</a>
-    </h1>
-    <div class="content">
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_center_mirror/" title="jcli center mirror" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_center_mirror/">
+        jcli center mirror
         
+        </a>
+    </li>
+     
+  
+ 
 
-<h2 id="job-management">Job Management</h2>
-
-<p>You can search a job list using a keyword, like this: <code>jcli job search input</code>.</p>
-
-<p>It&rsquo;s very simple to trigger a job. We have the batch mode and interactive mode. This command will finish immediately.</p>
-
-<p><code>jcli job build &quot;folderName jobName&quot; -b</code></p>
-
-<p>Once you triggered a job, then you can watch the log output by <code>jcli job log &quot;zjproject zjproject-inputstep55&quot; -w</code>. This command will always output the log of the last build.</p>
-
-<h2 id="proxy-support">Proxy Support</h2>
-
-<p>Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give <code>jcli</code> a proxy setting. It&rsquo;s also very simple to support a proxy setting. You just need to execute: <code>jcli config edit</code>. Then find the item which you want to add a proxy. Like the below demo:</p>
-
-<pre><code>- name: dev
-  url: http://192.168.1.10
-  username: admin
-  token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2
-  proxy: http://192.168.10.10:47586
-  proxyAuth: username:password
-</code></pre>
-
-    </div>
-</section>
-
-
-
-
-        
             
-    <section class="page" id="">
-    <h1>
-        <a href="#">Commands</a>
-    </h1>
-    <div class="content">
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_center_upgrade/" title="jcli center upgrade" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_center_upgrade/">
+        jcli center upgrade
         
-    </div>
-</section>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_center_watch/" title="jcli center watch" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_center_watch/">
+        jcli center watch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_completion/" title="jcli completion" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_completion/">
+        jcli completion
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config/" title="jcli config" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config/">
+        jcli config
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_add/" title="jcli config add" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_add/">
+        jcli config add
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_edit/" title="jcli config edit" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_edit/">
+        jcli config edit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_generate/" title="jcli config generate" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_generate/">
+        jcli config generate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_list/" title="jcli config list" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_list/">
+        jcli config list
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_remove/" title="jcli config remove" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_remove/">
+        jcli config remove
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_config_select/" title="jcli config select" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_config_select/">
+        jcli config select
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_crumb/" title="jcli crumb" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_crumb/">
+        jcli crumb
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_doc/" title="jcli doc" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_doc/">
+        jcli doc
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job/" title="jcli job" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job/">
+        jcli job
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_artifact/" title="jcli job artifact" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_artifact/">
+        jcli job artifact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_artifact_download/" title="jcli job artifact download" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_artifact_download/">
+        jcli job artifact download
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_build/" title="jcli job build" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_build/">
+        jcli job build
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_create/" title="jcli job create" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_create/">
+        jcli job create
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_delete/" title="jcli job delete" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_delete/">
+        jcli job delete
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_edit/" title="jcli job edit" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_edit/">
+        jcli job edit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_history/" title="jcli job history" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_history/">
+        jcli job history
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_input/" title="jcli job input" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_input/">
+        jcli job input
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_log/" title="jcli job log" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_log/">
+        jcli job log
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_param/" title="jcli job param" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_param/">
+        jcli job param
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_search/" title="jcli job search" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_search/">
+        jcli job search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_stop/" title="jcli job stop" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_stop/">
+        jcli job stop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_job_type/" title="jcli job type" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_job_type/">
+        jcli job type
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_open/" title="jcli open" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_open/">
+        jcli open
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin/" title="jcli plugin" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin/">
+        jcli plugin
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_check/" title="jcli plugin check" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_check/">
+        jcli plugin check
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_create/" title="jcli plugin create" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_create/">
+        jcli plugin create
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_download/" title="jcli plugin download" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_download/">
+        jcli plugin download
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_install/" title="jcli plugin install" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_install/">
+        jcli plugin install
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_list/" title="jcli plugin list" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_list/">
+        jcli plugin list
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_open/" title="jcli plugin open" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_open/">
+        jcli plugin open
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_search/" title="jcli plugin search" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_search/">
+        jcli plugin search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_trend/" title="jcli plugin trend" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_trend/">
+        jcli plugin trend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_uninstall/" title="jcli plugin uninstall" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_uninstall/">
+        jcli plugin uninstall
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_upgrade/" title="jcli plugin upgrade" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_upgrade/">
+        jcli plugin upgrade
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_plugin_upload/" title="jcli plugin upload" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_plugin_upload/">
+        jcli plugin upload
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_queue/" title="jcli queue" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_queue/">
+        jcli queue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_queue_cancel/" title="jcli queue cancel" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_queue_cancel/">
+        jcli queue cancel
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_queue_list/" title="jcli queue list" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_queue_list/">
+        jcli queue list
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_restart/" title="jcli restart" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_restart/">
+        jcli restart
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_shell/" title="jcli shell" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_shell/">
+        jcli shell
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_user/" title="jcli user" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_user/">
+        jcli user
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_user_create/" title="jcli user create" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_user_create/">
+        jcli user create
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_user_delete/" title="jcli user delete" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_user_delete/">
+        jcli user delete
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_user_edit/" title="jcli user edit" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_user_edit/">
+        jcli user edit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/jcli-docs/commands/jcli_user_token/" title="jcli user token" class="dd-item ">
+        <a href="/jcli-docs/commands/jcli_user_token/">
+        jcli user token
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
 
     
-            
-                <section class="page" id="jcli">
-    <h1>
-        <a href="#jcli">jcli</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli">jcli</h2>
-
-<p>jcli is a tool which could help you with your multiple Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>jcli is Jenkins CLI which could help with your multiple Jenkins,
-                  Manage your Jenkins and your pipelines
-                  More information could found at <a href="https://jenkins-zh.cn">https://jenkins-zh.cn</a></p>
-
-<pre><code>jcli [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -h, --help                help for jcli
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_center/">jcli center</a>  - Manage your update center</li>
-<li><a href="/commands/jcli_completion/">jcli completion</a>  - Genereate bash completion scripts</li>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-<li><a href="/commands/jcli_crumb/">jcli crumb</a>    - Print crumbIssuer of Jenkins</li>
-<li><a href="/commands/jcli_doc/">jcli doc</a>    - Generate document for all jcl commands</li>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-<li><a href="/commands/jcli_open/">jcli open</a>  - Open your Jenkins with a browse</li>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-<li><a href="/commands/jcli_queue/">jcli queue</a>    - Manage the queue of your Jenkins</li>
-<li><a href="/commands/jcli_restart/">jcli restart</a>    - Restart your Jenkins</li>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_center">
-    <h1>
-        <a href="#jcli_center">jcli center</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-center">jcli center</h2>
-
-<p>Manage your update center</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Manage your update center</p>
-
-<pre><code>jcli center [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for center
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_center_download/">jcli center download</a>    - Download Jenkins</li>
-<li><a href="/commands/jcli_center_upgrade/">jcli center upgrade</a>  - Upgrade your Jenkins</li>
-<li><a href="/commands/jcli_center_watch/">jcli center watch</a>  - Watch your update center status</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_center_download">
-    <h1>
-        <a href="#jcli_center_download">jcli center download</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-center-download">jcli center download</h2>
-
-<p>Download Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Download Jenkins</p>
-
-<pre><code>jcli center download [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help            help for download
-      --lts             If you want to download Jenkins as LTS (default true)
-  -o, --output string   The file of output (default &quot;jenkins.war&quot;)
-      --progress        If you want to show the download progress (default true)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_center/">jcli center</a>  - Manage your update center</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_center_upgrade">
-    <h1>
-        <a href="#jcli_center_upgrade">jcli center upgrade</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-center-upgrade">jcli center upgrade</h2>
-
-<p>Upgrade your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Upgrade your Jenkins</p>
-
-<pre><code>jcli center upgrade [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for upgrade
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_center/">jcli center</a>  - Manage your update center</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_center_watch">
-    <h1>
-        <a href="#jcli_center_watch">jcli center watch</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-center-watch">jcli center watch</h2>
-
-<p>Watch your update center status</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Watch your update center status</p>
-
-<pre><code>jcli center watch [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --count int               Count of watch (default 9999)
-  -h, --help                    help for watch
-  -i, --interval int            Interval of watch (default 1)
-      --util-install-complete   The watch will be continue util all Jenkins plugins installation is completed
-      --util-need-restart       The watch will be continue util Jenkins needs restart
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_center/">jcli center</a>  - Manage your update center</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_completion">
-    <h1>
-        <a href="#jcli_completion">jcli completion</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-completion">jcli completion</h2>
-
-<p>Genereate bash completion scripts</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Genereate bash completion scripts</p>
-
-<pre><code>jcli completion [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code># Installing bash completion on macOS using homebrew
-	## If running Bash 3.2 included with macOS
-	brew install bash-completion
-	## or, if running Bash 4.1+
-	brew install bash-completion@2
-	## you may need add the completion to your completion directory
-	jcli completion &gt; $(brew --prefix)/etc/bash_completion.d/jcli
-	## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83.
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for completion
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config">
-    <h1>
-        <a href="#jcli_config">jcli config</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config">jcli config</h2>
-
-<p>Manage the config of jcli</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Manage the config of jcli</p>
-
-<pre><code>jcli config [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code>  jcli config generate
-  jcli config list
-  jcli config edit
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for config
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_config_add/">jcli config add</a>  - Add a Jenkins config item</li>
-<li><a href="/commands/jcli_config_edit/">jcli config edit</a>    - Edit a Jenkins config</li>
-<li><a href="/commands/jcli_config_generate/">jcli config generate</a>    - Generate a sample config file for you</li>
-<li><a href="/commands/jcli_config_list/">jcli config list</a>    - List all Jenkins config items</li>
-<li><a href="/commands/jcli_config_remove/">jcli config remove</a>    - Remove a Jenkins config</li>
-<li><a href="/commands/jcli_config_select/">jcli config select</a>    - Select one config as current Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_add">
-    <h1>
-        <a href="#jcli_config_add">jcli config add</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-add">jcli config add</h2>
-
-<p>Add a Jenkins config item</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Add a Jenkins config item</p>
-
-<pre><code>jcli config add [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code>jcli config add -n demo
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -d, --description string   Description of the Jenkins
-  -h, --help                 help for add
-  -n, --name string          Name of the Jenkins
-  -p, --proxy string         Proxy of the Jenkins
-  -a, --proxyAuth string     ProxyAuth of the Jenkins
-  -t, --token string         Token of the Jenkins
-      --url string           URL of the Jenkins
-  -u, --username string      UserName of the Jenkins
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_edit">
-    <h1>
-        <a href="#jcli_config_edit">jcli config edit</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-edit">jcli config edit</h2>
-
-<p>Edit a Jenkins config</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Edit a Jenkins config</p>
-
-<pre><code>jcli config edit [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for edit
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_generate">
-    <h1>
-        <a href="#jcli_config_generate">jcli config generate</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-generate">jcli config generate</h2>
-
-<p>Generate a sample config file for you</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Generate a sample config file for you</p>
-
-<pre><code>jcli config generate [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -c, --copy   Copy the output into clipboard
-  -h, --help   help for generate
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_list">
-    <h1>
-        <a href="#jcli_config_list">jcli config list</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-list">jcli config list</h2>
-
-<p>List all Jenkins config items</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>List all Jenkins config items</p>
-
-<pre><code>jcli config list [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for list
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_remove">
-    <h1>
-        <a href="#jcli_config_remove">jcli config remove</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-remove">jcli config remove</h2>
-
-<p>Remove a Jenkins config</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Remove a Jenkins config</p>
-
-<pre><code>jcli config remove [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for remove
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_config_select">
-    <h1>
-        <a href="#jcli_config_select">jcli config select</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-config-select">jcli config select</h2>
-
-<p>Select one config as current Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Select one config as current Jenkins</p>
-
-<pre><code>jcli config select [&lt;name&gt;] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for select
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_config/">jcli config</a>  - Manage the config of jcli</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_crumb">
-    <h1>
-        <a href="#jcli_crumb">jcli crumb</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-crumb">jcli crumb</h2>
-
-<p>Print crumbIssuer of Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print crumbIssuer of Jenkins</p>
-
-<pre><code>jcli crumb [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for crumb
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_doc">
-    <h1>
-        <a href="#jcli_doc">jcli doc</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-doc">jcli doc</h2>
-
-<p>Generate document for all jcl commands</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Generate document for all jcl commands</p>
-
-<pre><code>jcli doc &lt;output dir&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for doc
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job">
-    <h1>
-        <a href="#jcli_job">jcli job</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job">jcli job</h2>
-
-<p>Print the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the job of your Jenkins</p>
-
-<pre><code>jcli job [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help            help for job
-  -o, --output string   Format the output (default &quot;json&quot;)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_job_artifact/">jcli job artifact</a>  - Print the artifact list of target job</li>
-<li><a href="/commands/jcli_job_build/">jcli job build</a>    - Build the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_create/">jcli job create</a>  - Create a job in your Jenkins</li>
-<li><a href="/commands/jcli_job_delete/">jcli job delete</a>  - Delete a job in your Jenkins</li>
-<li><a href="/commands/jcli_job_edit/">jcli job edit</a>  - Edit the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_history/">jcli job history</a>    - Print the history of job in your Jenkins</li>
-<li><a href="/commands/jcli_job_input/">jcli job input</a>    - Input a job in your Jenkins</li>
-<li><a href="/commands/jcli_job_log/">jcli job log</a>    - Print the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_param/">jcli job param</a>    - Get param of the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_search/">jcli job search</a>  - Print the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_stop/">jcli job stop</a>  - Stop a job build in your Jenkins</li>
-<li><a href="/commands/jcli_job_type/">jcli job type</a>  - Print the types of job which in your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_artifact">
-    <h1>
-        <a href="#jcli_job_artifact">jcli job artifact</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-artifact">jcli job artifact</h2>
-
-<p>Print the artifact list of target job</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the artifact list of target job</p>
-
-<pre><code>jcli job artifact &lt;jobName&gt; [buildID] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for artifact
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-<li><a href="/commands/jcli_job_artifact_download/">jcli job artifact download</a>    - Download the artifact of target job</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_artifact_download">
-    <h1>
-        <a href="#jcli_job_artifact_download">jcli job artifact download</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-artifact-download">jcli job artifact download</h2>
-
-<p>Download the artifact of target job</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Download the artifact of target job</p>
-
-<pre><code>jcli job artifact download &lt;jobName&gt; [buildID] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --download-dir string   The directory which artifact will be downloaded
-  -h, --help                  help for download
-  -i, --id string             ID of the job artifact
-      --progress              Whether show the progress (default true)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job_artifact/">jcli job artifact</a>  - Print the artifact list of target job</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_build">
-    <h1>
-        <a href="#jcli_job_build">jcli job build</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-build">jcli job build</h2>
-
-<p>Build the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Build the job of your Jenkins</p>
-
-<pre><code>jcli job build &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -b, --batch          Batch mode, no need confirm
-  -h, --help           help for build
-      --param string   Params of the job
-      --verbose        Output the verbose
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_create">
-    <h1>
-        <a href="#jcli_job_create">jcli job create</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-create">jcli job create</h2>
-
-<p>Create a job in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Create a job in your Jenkins</p>
-
-<pre><code>jcli job create &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --copy string   Copy an exists job
-  -h, --help          help for create
-      --type string   Which type do you want to create
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_delete">
-    <h1>
-        <a href="#jcli_job_delete">jcli job delete</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-delete">jcli job delete</h2>
-
-<p>Delete a job in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Delete a job in your Jenkins</p>
-
-<pre><code>jcli job delete &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -b, --batch   Batch mode, no need confirm
-  -h, --help    help for delete
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_edit">
-    <h1>
-        <a href="#jcli_job_edit">jcli job edit</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-edit">jcli job edit</h2>
-
-<p>Edit the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Edit the job of your Jenkins</p>
-
-<pre><code>jcli job edit &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for edit
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_history">
-    <h1>
-        <a href="#jcli_job_history">jcli job history</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-history">jcli job history</h2>
-
-<p>Print the history of job in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the history of job in your Jenkins</p>
-
-<pre><code>jcli job history &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for history
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_input">
-    <h1>
-        <a href="#jcli_job_input">jcli job input</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-input">jcli job input</h2>
-
-<p>Input a job in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Input a job in your Jenkins</p>
-
-<pre><code>jcli job input &lt;jobName&gt; [buildID] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --action string   The action wether you want to process or abort.
-  -h, --help            help for input
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_log">
-    <h1>
-        <a href="#jcli_job_log">jcli job log</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-log">jcli job log</h2>
-
-<p>Print the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the job of your Jenkins</p>
-
-<pre><code>jcli job log &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help           help for log
-  -s, --history int    Specific build history of log (default -1)
-  -i, --interval int   Interval of watch (default 1)
-  -w, --watch          Watch the job logs
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_param">
-    <h1>
-        <a href="#jcli_job_param">jcli job param</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-param">jcli job param</h2>
-
-<p>Get param of the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Get param of the job of your Jenkins</p>
-
-<pre><code>jcli job param &lt;jobName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help     help for param
-      --indent   Output with indent
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_search">
-    <h1>
-        <a href="#jcli_job_search">jcli job search</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-search">jcli job search</h2>
-
-<p>Print the job of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the job of your Jenkins</p>
-
-<pre><code>jcli job search [keyword] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --all       Print all items if there's no keyword
-  -h, --help      help for search
-      --max int   The number of limitation to print (default 10)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_stop">
-    <h1>
-        <a href="#jcli_job_stop">jcli job stop</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-stop">jcli job stop</h2>
-
-<p>Stop a job build in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Stop a job build in your Jenkins</p>
-
-<pre><code>jcli job stop &lt;jobName&gt; &lt;buildNumber&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -b, --batch   Batch mode, no need confirm
-  -h, --help    help for stop
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_job_type">
-    <h1>
-        <a href="#jcli_job_type">jcli job type</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-job-type">jcli job type</h2>
-
-<p>Print the types of job which in your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the types of job which in your Jenkins</p>
-
-<pre><code>jcli job type [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for type
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -o, --output string       Format the output (default &quot;json&quot;)
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_job/">jcli job</a>    - Print the job of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_open">
-    <h1>
-        <a href="#jcli_open">jcli open</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-open">jcli open</h2>
-
-<p>Open your Jenkins with a browse</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Open your Jenkins with a browse</p>
-
-<pre><code>jcli open [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -c, --config        Open the configuration page of Jenkins
-  -h, --help          help for open
-  -i, --interactive   Interactive mode
-  -n, --name string   Open a specific Jenkins by name
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin">
-    <h1>
-        <a href="#jcli_plugin">jcli plugin</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin">jcli plugin</h2>
-
-<p>Manage the plugins of Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Manage the plugins of Jenkins</p>
-
-<pre><code>jcli plugin [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code>  jcli plugin list
-  jcli plugin search github
-  jcli plugin check
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for plugin
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_plugin_check/">jcli plugin check</a>  - Checkout update center server</li>
-<li><a href="/commands/jcli_plugin_download/">jcli plugin download</a>    - Download the plugins</li>
-<li><a href="/commands/jcli_plugin_install/">jcli plugin install</a>  - Install the plugins</li>
-<li><a href="/commands/jcli_plugin_list/">jcli plugin list</a>    - Print all the plugins which are installed</li>
-<li><a href="/commands/jcli_plugin_open/">jcli plugin open</a>    - Openout update center server</li>
-<li><a href="/commands/jcli_plugin_search/">jcli plugin search</a>    - Print the plugins of your Jenkins</li>
-<li><a href="/commands/jcli_plugin_trend/">jcli plugin trend</a>  - Show the trend of the plugin</li>
-<li><a href="/commands/jcli_plugin_uninstall/">jcli plugin uninstall</a>  - Uninstall the plugins</li>
-<li><a href="/commands/jcli_plugin_upgrade/">jcli plugin upgrade</a>  - Upgrade the specific plugin</li>
-<li><a href="/commands/jcli_plugin_upload/">jcli plugin upload</a>    - Upload a plugin  to your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_check">
-    <h1>
-        <a href="#jcli_plugin_check">jcli plugin check</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-check">jcli plugin check</h2>
-
-<p>Checkout update center server</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Checkout update center server</p>
-
-<pre><code>jcli plugin check [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for check
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_download">
-    <h1>
-        <a href="#jcli_plugin_download">jcli plugin download</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-download">jcli plugin download</h2>
-
-<p>Download the plugins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Download the plugins</p>
-
-<pre><code>jcli plugin download &lt;keyword&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for download
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_install">
-    <h1>
-        <a href="#jcli_plugin_install">jcli plugin install</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-install">jcli plugin install</h2>
-
-<p>Install the plugins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Install the plugins</p>
-
-<pre><code>jcli plugin install [pluginName] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help           help for install
-      --suite string   Suite of plugins
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_list">
-    <h1>
-        <a href="#jcli_plugin_list">jcli plugin list</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-list">jcli plugin list</h2>
-
-<p>Print all the plugins which are installed</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print all the plugins which are installed</p>
-
-<pre><code>jcli plugin list [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code>  jcli plugin list --filter name=github
-  jcli plugin list --filter hasUpdate
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --filter stringArray   Filter for the list, like: active, hasUpdate, downgradable, enable, name=foo
-  -h, --help                 help for list
-  -o, --output string        Format the output, supported formats: table, json, yaml (default &quot;table&quot;)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_open">
-    <h1>
-        <a href="#jcli_plugin_open">jcli plugin open</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-open">jcli plugin open</h2>
-
-<p>Openout update center server</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Openout update center server</p>
-
-<pre><code>jcli plugin open [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for open
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_search">
-    <h1>
-        <a href="#jcli_plugin_search">jcli plugin search</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-search">jcli plugin search</h2>
-
-<p>Print the plugins of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the plugins of your Jenkins</p>
-
-<pre><code>jcli plugin search &lt;keyword&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help            help for search
-  -o, --output string   Format the output (default &quot;table&quot;)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_trend">
-    <h1>
-        <a href="#jcli_plugin_trend">jcli plugin trend</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-trend">jcli plugin trend</h2>
-
-<p>Show the trend of the plugin</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Show the trend of the plugin</p>
-
-<pre><code>jcli plugin trend &lt;pluginName&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for trend
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_uninstall">
-    <h1>
-        <a href="#jcli_plugin_uninstall">jcli plugin uninstall</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-uninstall">jcli plugin uninstall</h2>
-
-<p>Uninstall the plugins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Uninstall the plugins</p>
-
-<pre><code>jcli plugin uninstall [pluginName] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for uninstall
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_upgrade">
-    <h1>
-        <a href="#jcli_plugin_upgrade">jcli plugin upgrade</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-upgrade">jcli plugin upgrade</h2>
-
-<p>Upgrade the specific plugin</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Upgrade the specific plugin</p>
-
-<pre><code>jcli plugin upgrade [plugin name] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>      --filter stringArray   Filter for the list, like: name=foo
-  -h, --help                 help for upgrade
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_plugin_upload">
-    <h1>
-        <a href="#jcli_plugin_upload">jcli plugin upload</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-plugin-upload">jcli plugin upload</h2>
-
-<p>Upload a plugin  to your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Upload a plugin from local filesystem or remote URL to your Jenkins</p>
-
-<pre><code>jcli plugin upload [flags]
-</code></pre>
-
-<h3 id="examples">Examples</h3>
-
-<pre><code>  jcli plugin upload --remote https://server/sample.hpi
-jcli plugin upload sample.hpi
-jcli plugin upload sample.hpi --show-progress=false
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help                     help for upload
-  -r, --remote string            Remote plugin URL
-      --remote-jenkins string    Remote Jenkins which will find from config list
-      --remote-password string   Password of remote plugin URL
-      --remote-user string       User of remote plugin URL
-      --show-progress            Whether show the upload progress (default true)
-      --skip-posthook            Whether skip the post command hook
-      --skip-prehook             Whether skip the previous command hook
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_plugin/">jcli plugin</a>  - Manage the plugins of Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_queue">
-    <h1>
-        <a href="#jcli_queue">jcli queue</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-queue">jcli queue</h2>
-
-<p>Manage the queue of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Manage the queue of your Jenkins</p>
-
-<pre><code>jcli queue [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for queue
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_queue_cancel/">jcli queue cancel</a>  - Cancel the queue of your Jenkins</li>
-<li><a href="/commands/jcli_queue_list/">jcli queue list</a>  - Print the queue of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_queue_cancel">
-    <h1>
-        <a href="#jcli_queue_cancel">jcli queue cancel</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-queue-cancel">jcli queue cancel</h2>
-
-<p>Cancel the queue of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Cancel the queue of your Jenkins</p>
-
-<pre><code>jcli queue cancel &lt;id&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for cancel
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_queue/">jcli queue</a>    - Manage the queue of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_queue_list">
-    <h1>
-        <a href="#jcli_queue_list">jcli queue list</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-queue-list">jcli queue list</h2>
-
-<p>Print the queue of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the queue of your Jenkins</p>
-
-<pre><code>jcli queue list [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help            help for list
-  -o, --output string   Format the output (default &quot;json&quot;)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_queue/">jcli queue</a>    - Manage the queue of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_restart">
-    <h1>
-        <a href="#jcli_restart">jcli restart</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-restart">jcli restart</h2>
-
-<p>Restart your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Restart your Jenkins</p>
-
-<pre><code>jcli restart [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -b, --batch   Batch mode, no need confirm
-  -h, --help    help for restart
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_user">
-    <h1>
-        <a href="#jcli_user">jcli user</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-user">jcli user</h2>
-
-<p>Print the user of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Print the user of your Jenkins</p>
-
-<pre><code>jcli user [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help            help for user
-  -o, --output string   Format the output (default &quot;json&quot;)
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli/">jcli</a>    - jcli is a tool which could help you with your multiple Jenkins</li>
-<li><a href="/commands/jcli_user_create/">jcli user create</a>    - Create a user for your Jenkins</li>
-<li><a href="/commands/jcli_user_delete/">jcli user delete</a>    - Delete a user for your Jenkins</li>
-<li><a href="/commands/jcli_user_edit/">jcli user edit</a>    - Edit the user of your Jenkins</li>
-<li><a href="/commands/jcli_user_token/">jcli user token</a>  - Token the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_user_create">
-    <h1>
-        <a href="#jcli_user_create">jcli user create</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-user-create">jcli user create</h2>
-
-<p>Create a user for your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Create a user for your Jenkins</p>
-
-<pre><code>jcli user create &lt;username&gt; [password] [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -h, --help   help for create
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_user_delete">
-    <h1>
-        <a href="#jcli_user_delete">jcli user delete</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-user-delete">jcli user delete</h2>
-
-<p>Delete a user for your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Delete a user for your Jenkins</p>
-
-<pre><code>jcli user delete &lt;username&gt; [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -b, --batch   Batch mode, no need confirm
-  -h, --help    help for delete
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_user_edit">
-    <h1>
-        <a href="#jcli_user_edit">jcli user edit</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-user-edit">jcli user edit</h2>
-
-<p>Edit the user of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Edit the user of your Jenkins</p>
-
-<pre><code>jcli user edit [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -d, --desc   Edit the description
-  -h, --help   help for edit
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-                <section class="page" id="jcli_user_token">
-    <h1>
-        <a href="#jcli_user_token">jcli user token</a>
-    </h1>
-    <div class="content">
-        
-
-<h2 id="jcli-user-token">jcli user token</h2>
-
-<p>Token the user of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Token the user of your Jenkins</p>
-
-<pre><code>jcli user token -g [flags]
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code>  -g, --generate      Generate the token
-  -h, --help          help for token
-  -n, --name string   Name of the token
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string   An alternative config file
-      --debug               Print the output into debug.html
-  -j, --jenkins string      Select a Jenkins server for this time
-  -v, --version             Print the version of Jenkins CLI
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
-
-<h6 id="auto-generated-by-spf13-cobra-on-26-nov-2019">Auto generated by spf13/cobra on 26-Nov-2019</h6>
-
-    </div>
-</section>
-
-            
-
-
-
-        
     
-</div>
-</body>
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="https://jenkins-zh.github.io/jcli-docs/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh" value="https://jenkins-zh.github.io/jcli-docs/zh/">中文</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+
+        
+
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<p>Jenkins CLI allows you manage your Jenkins in an easy way. No matter if you&rsquo;re a plugin
+developer, administrator or just a regular user, it is made for you!</p>
+
+<h1 id="features">Features</h1>
+
+<ul>
+<li>Multiple Jenkins support</li>
+<li>Plugins management (list, search, install, upload)</li>
+<li>Job management (search, build, log)</li>
+<li>Open your Jenkins with a browser</li>
+<li>Restart your Jenkins</li>
+<li>Connection with proxy support</li>
+</ul>
+
+<h1 id="get-it">Get it</h1>
+
+<p>We support Mac, Linux and Windows for now.</p>
+
+<h2 id="mac">Mac</h2>
+
+<p>You can use <code>brew</code> to install jcli.</p>
+
+<pre><code>brew tap jenkins-zh/jcli
+brew install jcli
+</code></pre>
+
+<h2 id="linux">Linux</h2>
+
+<p>To install <code>jcli</code> on your Linux OS, execute the following command:</p>
+
+<pre><code>curl -L https://github.com/jenkins-zh/jenkins-cli/releases/latest/download/jcli-linux-amd64.tar.gz|tar xzv
+sudo mv jcli /usr/local/bin/
+</code></pre>
+
+<h2 id="windows">Windows</h2>
+
+<p>You can find the latest version <a href="https://github.com/jenkins-zh/jenkins-cli/releases/latest/download/jcli-windows-386.tar.gz">here</a>. Download the tar file and copy the uncompressed <code>jcli</code> directory into your system path.</p>
+
+<h2 id="other-package-managers">Other package managers</h2>
+
+<p>Here are other package managers:</p>
+
+<ul>
+<li><a href="https://gofi.sh/">GoFish</a> users can use <code>gofish install jcli</code></li>
+<li><a href="https://scoop.sh/">Scoop</a> users can use <code>scoop install jcli</code></li>
+</ul>
+
+<h1 id="get-started">Get started</h1>
+
+<p>Read <a href="doc/README.md">this document</a> for more details on how to use <code>jcli</code>.</p>
+
+<h1 id="contribution">Contribution</h1>
+
+<p>If you&rsquo;re interested in this project. Please go through the
+<a href="CONTRIBUTING.md">contribution guide</a>. Any contributions are welcome.</p>
+	
+  
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="/jcli-docs/quickstart/" title="Quick Start" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/jcli-docs/js/clipboard.min.js?1574951031"></script>
+    <script src="/jcli-docs/js/perfect-scrollbar.min.js?1574951031"></script>
+    <script src="/jcli-docs/js/perfect-scrollbar.jquery.min.js?1574951031"></script>
+    <script src="/jcli-docs/js/jquery.sticky.js?1574951031"></script>
+    <script src="/jcli-docs/js/featherlight.min.js?1574951031"></script>
+    <script src="/jcli-docs/js/highlight.pack.js?1574951031"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/jcli-docs/js/modernizr.custom-3.6.0.js?1574951031"></script>
+    <script src="/jcli-docs/js/learn.js?1574951031"></script>
+    <script src="/jcli-docs/js/hugo-learn.js?1574951031"></script>
+
+    <link href="/jcli-docs/mermaid/mermaid.css?1574951031" rel="stylesheet" />
+    <script src="/jcli-docs/mermaid/mermaid.js?1574951031"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
 </html>
 
