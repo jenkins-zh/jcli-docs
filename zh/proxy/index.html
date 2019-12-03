@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>jcli user token :: Jenkins CLI</title>
+    <title>代理 :: Jenkins CLI</title>
 
     
     <link href="/css/nucleus.css?1575333195" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/commands/jcli_user_token/">
+  <body class="" data-url="/zh/proxy/">
     <nav id="sidebar" class="">
 
 
@@ -136,8 +136,8 @@
   
     
     <li data-nav-id="/zh/proxy/" title="代理" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/zh/proxy/">
@@ -158,7 +158,7 @@
   
     
     <li data-nav-id="/zh/commands/" title="命令" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1170,7 +1170,7 @@
  
   
     
-      <li data-nav-id="/commands/jcli_user_token/" title="jcli user token" class="dd-item active">
+      <li data-nav-id="/commands/jcli_user_token/" title="jcli user token" class="dd-item ">
         <a href="/commands/jcli_user_token/">
         jcli user token
         
@@ -1214,7 +1214,7 @@
                   
                     
                     
-                      <option id="en" value="http://jcli.jenkins-zh.cn/commands/jcli_user_token/">English</option>
+                      <option id="en" value="http://jcli.jenkins-zh.cn/proxy/">English</option>
                     
                   
               
@@ -1228,7 +1228,7 @@
                   
                     
                     
-                      <option id="zh" value="http://jcli.jenkins-zh.cn/commands/jcli_user_token/" selected>中文</option>
+                      <option id="zh" value="http://jcli.jenkins-zh.cn/zh/proxy/" selected>中文</option>
                     
                   
               
@@ -1289,13 +1289,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/zh/'></a> > <a href='/zh/commands/'>命令</a> > jcli user token
-          
-         
+            <a href='/zh/'></a> > 代理
           
          
           
@@ -1306,20 +1300,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#jcli-user-token">jcli user token</a>
-<ul>
-<li><a href="#synopsis">Synopsis</a></li>
-<li><a href="#options">Options</a></li>
-<li><a href="#options-inherited-from-parent-commands">Options inherited from parent commands</a></li>
-<li><a href="#see-also">SEE ALSO</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1335,7 +1316,7 @@
           
             <h1>
               
-              jcli user token
+              代理
             </h1>
           
 
@@ -1344,44 +1325,25 @@
 
 
 
+	<p>你可能需要设置代理才可以访问到 Jenkins，这时候，可以给 <code>jcli</code> 配置代理服务器的信息。
+执行命令：<code>jcli config edit</code> 就会打开配置文件，参考下面的配置：</p>
 
-<h2 id="jcli-user-token">jcli user token</h2>
-
-<p>Token the user of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Token the user of your Jenkins</p>
-
-<pre><code>jcli user token -g [flags]
+<pre><code>jenkins_servers:
+- name: dev
+  url: http://192.168.1.10
+  username: admin
+  token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2
+  proxy: http://192.168.10.10:47586
+  proxyAuth: username:password
 </code></pre>
 
-<h3 id="options">Options</h3>
 
-<pre><code>  -g, --generate      Generate the token
-  -h, --help          help for token
-  -n, --name string   Name of the token
-</code></pre>
 
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string     指定另外一个配置文件
-      --debug                 Print the output into debug.html
-  -j, --jenkins string        选择本次执行的 Jenkins
-      --logger-level string   Logger level which could be: debug, info, warn, error (default &quot;warn&quot;)
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
-
 
         
         </div> 
@@ -1398,6 +1360,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1412,6 +1375,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1445,34 +1411,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1490,37 +1428,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1529,9 +1438,6 @@
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -2306,6 +2212,69 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2330,8 +2299,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/commands/jcli_user_edit/" title="jcli user edit"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zh/job/" title="任务"> <i class="fa fa-chevron-left"></i></a>
 		
+		
+			<a class="nav nav-next" href="/zh/commands/" title="命令" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2361,4 +2332,3 @@
 
   </body>
 </html>
-

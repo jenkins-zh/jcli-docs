@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" class="js csstransforms3d">
+<html lang="en" class="js csstransforms3d">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>jcli user token :: Jenkins CLI</title>
+    <title>Proxy :: Jenkins CLI</title>
 
     
     <link href="/css/nucleus.css?1575333195" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/commands/jcli_user_token/">
+  <body class="" data-url="/proxy/">
     <nav id="sidebar" class="">
 
 
@@ -72,7 +72,7 @@
 <script type="text/javascript" src="/js/auto-complete.js?1575333195"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/jcli.jenkins-zh.cn\/\/zh";
+        var baseurl = "http:\/\/jcli.jenkins-zh.cn\/";
     
 </script>
 <script type="text/javascript" src="/js/search.js?1575333195"></script>
@@ -91,13 +91,13 @@
  
   
     
-    <li data-nav-id="/zh/plugin/" title="插件" class="dd-item 
+    <li data-nav-id="/quickstart/" title="Quick Start" class="dd-item 
         
         
         
         ">
-      <a href="/zh/plugin/">
-          插件
+      <a href="/quickstart/">
+          Quick Start
           
       </a>
       
@@ -113,13 +113,13 @@
  
   
     
-    <li data-nav-id="/zh/job/" title="任务" class="dd-item 
+    <li data-nav-id="/plugin/" title="Plugin" class="dd-item 
         
         
         
         ">
-      <a href="/zh/job/">
-          任务
+      <a href="/plugin/">
+          Plugin
           
       </a>
       
@@ -135,13 +135,13 @@
  
   
     
-    <li data-nav-id="/zh/proxy/" title="代理" class="dd-item 
+    <li data-nav-id="/job/" title="Job" class="dd-item 
         
         
         
         ">
-      <a href="/zh/proxy/">
-          代理
+      <a href="/job/">
+          Job
           
       </a>
       
@@ -157,13 +157,13 @@
  
   
     
-    <li data-nav-id="/zh/commands/" title="命令" class="dd-item 
-        parent
+    <li data-nav-id="/commands/" title="Command" class="dd-item 
+        
         
         
         ">
-      <a href="/zh/commands/">
-          命令
+      <a href="/commands/">
+          Command
           
       </a>
       
@@ -1170,7 +1170,7 @@
  
   
     
-      <li data-nav-id="/commands/jcli_user_token/" title="jcli user token" class="dd-item active">
+      <li data-nav-id="/commands/jcli_user_token/" title="jcli user token" class="dd-item ">
         <a href="/commands/jcli_user_token/">
         jcli user token
         
@@ -1184,6 +1184,28 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/proxy/" title="Proxy" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/proxy/">
+          Proxy
+          
+      </a>
+      
               
     </li>
   
@@ -1214,7 +1236,7 @@
                   
                     
                     
-                      <option id="en" value="http://jcli.jenkins-zh.cn/commands/jcli_user_token/">English</option>
+                      <option id="en" value="http://jcli.jenkins-zh.cn/proxy/" selected>English</option>
                     
                   
               
@@ -1228,7 +1250,7 @@
                   
                     
                     
-                      <option id="zh" value="http://jcli.jenkins-zh.cn/commands/jcli_user_token/" selected>中文</option>
+                      <option id="zh" value="http://jcli.jenkins-zh.cn/zh/proxy/">中文</option>
                     
                   
               
@@ -1289,13 +1311,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/zh/'></a> > <a href='/zh/commands/'>命令</a> > jcli user token
-          
-         
+            <a href='/'></a> > Proxy
           
          
           
@@ -1306,20 +1322,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#jcli-user-token">jcli user token</a>
-<ul>
-<li><a href="#synopsis">Synopsis</a></li>
-<li><a href="#options">Options</a></li>
-<li><a href="#options-inherited-from-parent-commands">Options inherited from parent commands</a></li>
-<li><a href="#see-also">SEE ALSO</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1335,7 +1338,7 @@
           
             <h1>
               
-              jcli user token
+              Proxy
             </h1>
           
 
@@ -1344,44 +1347,24 @@
 
 
 
+	<p>Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give <code>jcli</code> a proxy setting. It&rsquo;s also very simple to support a proxy setting. You just need to execute: <code>jcli config edit</code>. Then find the item which you want to add a proxy. Like the below demo:</p>
 
-<h2 id="jcli-user-token">jcli user token</h2>
-
-<p>Token the user of your Jenkins</p>
-
-<h3 id="synopsis">Synopsis</h3>
-
-<p>Token the user of your Jenkins</p>
-
-<pre><code>jcli user token -g [flags]
+<pre><code>jenkins_servers:
+- name: dev
+  url: http://192.168.1.10
+  username: admin
+  token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2
+  proxy: http://192.168.10.10:47586
+  proxyAuth: username:password
 </code></pre>
 
-<h3 id="options">Options</h3>
 
-<pre><code>  -g, --generate      Generate the token
-  -h, --help          help for token
-  -n, --name string   Name of the token
-</code></pre>
 
-<h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
-
-<pre><code>      --configFile string     指定另外一个配置文件
-      --debug                 Print the output into debug.html
-  -j, --jenkins string        选择本次执行的 Jenkins
-      --logger-level string   Logger level which could be: debug, info, warn, error (default &quot;warn&quot;)
-</code></pre>
-
-<h3 id="see-also">SEE ALSO</h3>
-
-<ul>
-<li><a href="/commands/jcli_user/">jcli user</a>  - Print the user of your Jenkins</li>
-</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
-
 
         
         </div> 
@@ -1398,6 +1381,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1412,6 +1396,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2306,7 +2293,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2317,6 +2303,23 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -2330,8 +2333,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/commands/jcli_user_edit/" title="jcli user edit"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/commands/jcli_user_token/" title="jcli user token"> <i class="fa fa-chevron-left"></i></a>
 		
+		
+			<a class="nav nav-next" href="/quickstart/" title="Quick Start" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2361,4 +2366,3 @@
 
   </body>
 </html>
-

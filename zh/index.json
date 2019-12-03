@@ -1,5 +1,33 @@
 [
 {
+	"uri": "http://jcli.jenkins-zh.cn/zh/plugin/",
+	"title": "插件",
+	"tags": [],
+	"description": "",
+	"content": " 插件管理 jcli 可以让你搜索、下载、安装、卸载或者上传插件。\n安装插件 你可以通过关键字来搜索要安装的插件，命令如下：\njcli plugin search zh-cn\n然后，拷贝要安装的插件的名称，并用如下的命令来安装：\njcli plugin install localization-zh-cn\n下载插件 当你的 Jenkins 无法访问外网，或者其他无法直接安装插件的情况下， 可以先把需要安装的插件下载到本地，然后再上传。\njcli plugin download localization-zh-cn\n默认情况下，会下载你需要的插件以及依赖。如果不需要下载依赖的话，可以使用参数： --skip-dependency\n上传插件 你可以选择上传本地或者远程的插件，甚至可以实现编译本地的插件源码后上传。 在没有给定任何参数的情况下，上传命令首先会尝试执行 Maven 的构建命令， 然后再上传文件。\njcli plugin upload\n如果你已经有编译好的插件文件，可以使用下面的命令：\njcli plugin upload sample.hpi\n"
+},
+{
+	"uri": "http://jcli.jenkins-zh.cn/zh/job/",
+	"title": "任务",
+	"tags": [],
+	"description": "",
+	"content": " 任务管理 使用如下的命令可以搜索 Jenkins 任务：\njcli job search input\n要触发一个任务的话，可以使用下面的命令：\njcli job build \u0026quot;jobName\u0026quot; -b\n通过下面的命令可以参考一个任务的执行日志：\njcli job log \u0026quot;jobName\u0026quot; -w\n"
+},
+{
+	"uri": "http://jcli.jenkins-zh.cn/zh/proxy/",
+	"title": "代理",
+	"tags": [],
+	"description": "",
+	"content": "你可能需要设置代理才可以访问到 Jenkins，这时候，可以给 jcli 配置代理服务器的信息。 执行命令：jcli config edit 就会打开配置文件，参考下面的配置：\njenkins_servers: - name: dev url: http://192.168.1.10 username: admin token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2 proxy: http://192.168.10.10:47586 proxyAuth: username:password  "
+},
+{
+	"uri": "http://jcli.jenkins-zh.cn/zh/commands/",
+	"title": "命令",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://jcli.jenkins-zh.cn/commands/jcli/",
 	"title": "jcli",
 	"tags": [],
@@ -380,13 +408,6 @@
 {
 	"uri": "http://jcli.jenkins-zh.cn/zh/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "http://jcli.jenkins-zh.cn/zh/commands/",
-	"title": "Commands",
 	"tags": [],
 	"description": "",
 	"content": ""

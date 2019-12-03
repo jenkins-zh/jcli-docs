@@ -18,7 +18,21 @@
 	"title": "Job",
 	"tags": [],
 	"description": "",
-	"content": " Job Management You can search a job list using a keyword, like this: jcli job search input.\nIt\u0026rsquo;s very simple to trigger a job. We have the batch mode and interactive mode. This command will finish immediately.\njcli job build \u0026quot;folderName jobName\u0026quot; -b\nOnce you triggered a job, then you can watch the log output by jcli job log \u0026quot;zjproject zjproject-inputstep55\u0026quot; -w. This command will always output the log of the last build.\nProxy Support Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give jcli a proxy setting. It\u0026rsquo;s also very simple to support a proxy setting. You just need to execute: jcli config edit. Then find the item which you want to add a proxy. Like the below demo:\n- name: dev url: http://192.168.1.10 username: admin token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2 proxy: http://192.168.10.10:47586 proxyAuth: username:password  "
+	"content": " Job Management You can search a job list using a keyword, like this: jcli job search input.\nIt\u0026rsquo;s very simple to trigger a job. We have the batch mode and interactive mode. This command will finish immediately.\njcli job build \u0026quot;folderName jobName\u0026quot; -b\nOnce you triggered a job, then you can watch the log output by jcli job log \u0026quot;zjproject zjproject-inputstep55\u0026quot; -w. This command will always output the log of the last build.\nProxy Support Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give jcli a proxy setting. It\u0026rsquo;s also very simple to support a proxy setting. You just need to execute: jcli config edit. Then find the item which you want to add a proxy. Like the below demo:\njenkins_servers: - name: dev url: http://192.168.1.10 username: admin token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2 proxy: http://192.168.10.10:47586 proxyAuth: username:password  "
+},
+{
+	"uri": "http://jcli.jenkins-zh.cn/commands/",
+	"title": "Command",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://jcli.jenkins-zh.cn/proxy/",
+	"title": "Proxy",
+	"tags": [],
+	"description": "",
+	"content": "Jenkins might be stay in behind a firewall. So we cannot connect it directly. You can give jcli a proxy setting. It\u0026rsquo;s also very simple to support a proxy setting. You just need to execute: jcli config edit. Then find the item which you want to add a proxy. Like the below demo:\njenkins_servers: - name: dev url: http://192.168.1.10 username: admin token: 11132c9ae4b20edbe56ac3e09cb5a3c8c2 proxy: http://192.168.10.10:47586 proxyAuth: username:password  "
 },
 {
 	"uri": "http://jcli.jenkins-zh.cn/commands/jcli/",
@@ -401,13 +415,6 @@
 {
 	"uri": "http://jcli.jenkins-zh.cn/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "http://jcli.jenkins-zh.cn/commands/",
-	"title": "Commands",
 	"tags": [],
 	"description": "",
 	"content": ""

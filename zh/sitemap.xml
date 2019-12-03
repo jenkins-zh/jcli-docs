@@ -3,8 +3,65 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://jcli.jenkins-zh.cn/zh/plugin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jcli.jenkins-zh.cn/plugin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://jcli.jenkins-zh.cn/zh/plugin/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://jcli.jenkins-zh.cn/zh/job/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jcli.jenkins-zh.cn/job/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://jcli.jenkins-zh.cn/zh/job/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://jcli.jenkins-zh.cn/zh/proxy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jcli.jenkins-zh.cn/proxy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://jcli.jenkins-zh.cn/zh/proxy/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://jcli.jenkins-zh.cn/zh/commands/</loc>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jcli.jenkins-zh.cn/commands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://jcli.jenkins-zh.cn/zh/commands/"
+                />
+  </url>
+  
+  <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +76,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_center/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,7 +91,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,7 +106,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -64,7 +121,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -79,7 +136,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +151,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_completion/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -109,7 +166,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -124,7 +181,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -139,7 +196,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -154,7 +211,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -169,7 +226,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -184,7 +241,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -199,7 +256,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -214,7 +271,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -229,7 +286,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_doc/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -244,7 +301,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -259,7 +316,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -274,7 +331,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -289,7 +346,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -304,7 +361,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -319,7 +376,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -334,7 +391,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -349,7 +406,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -364,7 +421,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -379,7 +436,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -394,7 +451,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -409,7 +466,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -424,7 +481,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -439,7 +496,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -454,7 +511,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_open/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -469,7 +526,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -484,7 +541,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -499,7 +556,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -514,7 +571,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -529,7 +586,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -544,7 +601,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -559,7 +616,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -574,7 +631,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -589,7 +646,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -604,7 +661,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -619,7 +676,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -634,7 +691,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -649,7 +706,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -664,7 +721,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -679,7 +736,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -694,7 +751,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_restart/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -709,7 +766,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_shell/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -724,7 +781,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_user/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -739,7 +796,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -754,7 +811,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -769,7 +826,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -784,7 +841,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -799,7 +856,7 @@
   
   <url>
     <loc>http://jcli.jenkins-zh.cn/zh/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
+    <lastmod>2019-12-03T00:33:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -824,22 +881,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://jcli.jenkins-zh.cn/zh/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://jcli.jenkins-zh.cn/zh/commands/</loc>
-    <lastmod>2019-11-30T00:58:43+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://jcli.jenkins-zh.cn/commands/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://jcli.jenkins-zh.cn/zh/commands/"
                 />
   </url>
   
