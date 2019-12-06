@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Quick Start on Jenkins CLI</title>
+    <title>Quick Start on Jenkinc CLI</title>
     <link>http://jcli.jenkins-zh.cn/quickstart/</link>
-    <description>Recent content in Quick Start on Jenkins CLI</description>
+    <description>Recent content in Quick Start on Jenkinc CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jan 2018 21:58:09 +0100</lastBuildDate>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Proxy on Jenkins CLI</title>
+    <title>Proxy on Jenkinc CLI</title>
     <link>http://jcli.jenkins-zh.cn/proxy/</link>
-    <description>Recent content in Proxy on Jenkins CLI</description>
+    <description>Recent content in Proxy on Jenkinc CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
