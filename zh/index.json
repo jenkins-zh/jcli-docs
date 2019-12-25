@@ -28,6 +28,13 @@
 	"content": " jcli 可以完成用户的创建、删除以及生成令牌（Token）的操作，\n创建用户 jcli user create \u0026lt;username\u0026gt; [password] [flags]  在创建用户的时候，可以指定一个密码或者随机生成。\n生成令牌 Jenkins 的 Web API 必须是通过令牌（Token）来访问，jcli 支持给当前用户或者 指定用户生成令牌。给当前用户生成令牌的命令如下：\njcli user token -g\n如果希望通过管理员给其他的 Jenkins 用户生成令牌的话，需要在启动 Jenkins 时给定一些参数， 具体参考下面的命令：\njcli center start --admin-can-generate-new-tokens jcli user token -g --target-user target-user-name  上面的第一条命令会启动 Jenkins 并设置为允许有管理员权限的用户为其他用户生成令牌。\n"
 },
 {
+	"uri": "http://jcli.jenkins-zh.cn/zh/doctor/",
+	"title": "诊断",
+	"tags": [],
+	"description": "",
+	"content": " 由于错误配置或者是缺少相应插件，可能会导致 jcli 无法正常工作。然而，有时候想要快速地找到问题所在， 是一件不容易而且费时的事情。这里要介绍的诊断功能，就是为了解决这样的问题而存在的。\n插件依赖 就像命令 jcli job search 要依赖插件 [pipeline-restful-api](https://plugins.jenkins.io/pipeline-restful-api) 一样，其他部分插件也有类似的依赖。有的情况下，还对插件的版本有要求。\n在执行命令时，如果发现无法使用，可以尝试使用诊断参数来检查是否缺少依赖：\njcli job search --doctor\n其中 --doctor 是一个全局参数。当有依赖不满足等情况发生时，会有相应的错误提示信息输出。例如： Error: lack of plugin pipeline-restful-api。\n"
+},
+{
 	"uri": "http://jcli.jenkins-zh.cn/zh/commands/",
 	"title": "命令",
 	"tags": [],
