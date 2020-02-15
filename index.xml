@@ -6,7 +6,7 @@
     <description>Recent content on Jenkinc CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2019 12:14:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 11:36:07 +0000</lastBuildDate>
     
 	<atom:link href="http://jcli.jenkins-zh.cn/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,18 +14,18 @@
     <item>
       <title>jcli</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli/</guid>
       <description>jcli jcli is a tool which could help you with your multiple Jenkins
 Synopsis jcli is Jenkins CLI which could help with your multiple Jenkins, Manage your Jenkins and your pipelines More information could found at https://jenkins-zh.cn
-jcli [flags]  Options  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command -h, --help help for jcli --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins -v, --version Print the version of Jenkins CLI  SEE ALSO  jcli casc - Configuration as Code jcli center - Manage your update center jcli completion - Genereate bash completion scripts jcli computer - Manage the computers of your Jenkins jcli config - Manage the config of jcli jcli credential - Manage the credentials of your Jenkins jcli crumb - Print crumbIssuer of Jenkins jcli doc - Generate document for all jcl commands jcli job - Manage the job of your Jenkins jcli open - Open your Jenkins with a browser jcli plugin - Manage the plugins of Jenkins jcli queue - Manage the queue of your Jenkins jcli restart - Restart your Jenkins jcli shell - Create a sub shell so that changes to a specific Jenkins remain local to the shell.</description>
+jcli [flags]  Options  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command -h, --help help for jcli --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins -v, --version Print the version of Jenkins CLI  SEE ALSO  jcli casc - Configuration as Code jcli center - Manage your update center jcli completion - Generate bash completion scripts jcli computer - Manage the computers of your Jenkins jcli config - Manage the config of jcli jcli credential - Manage the credentials of your Jenkins jcli crumb - Print crumbIssuer of Jenkins jcli doc - Generate document for all jcl commands jcli job - Manage the job of your Jenkins jcli open - Open your Jenkins with a browser jcli plugin - Manage the plugins of Jenkins jcli queue - Manage the queue of your Jenkins jcli restart - Restart your Jenkins jcli shell - Create a sub shell so that changes to a specific Jenkins remain local to the shell.</description>
     </item>
     
     <item>
       <title>jcli casc</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc/</guid>
       <description> jcli casc Configuration as Code
@@ -36,7 +36,7 @@ Options  -h, --help help for casc  Options inherited from parent commands  --con
     <item>
       <title>jcli casc apply</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</guid>
       <description> jcli casc apply Apply config through configuration-as-code
@@ -47,7 +47,7 @@ jcli casc apply [flags]  Options  -h, --help help for apply  Options inherited f
     <item>
       <title>jcli casc export</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_export/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_export/</guid>
       <description> jcli casc export Export the config from configuration-as-code
@@ -58,7 +58,7 @@ jcli casc export [flags]  Options  -h, --help help for export  Options inherited
     <item>
       <title>jcli casc open</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_open/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_open/</guid>
       <description> jcli casc open Open Configuration as Code page in browser
@@ -69,7 +69,7 @@ jcli casc open [flags]  Options  -h, --help help for open  Options inherited fro
     <item>
       <title>jcli casc reload</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</guid>
       <description> jcli casc reload Reload config through configuration-as-code
@@ -80,7 +80,7 @@ jcli casc reload [flags]  Options  -h, --help help for reload  Options inherited
     <item>
       <title>jcli casc schema</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</guid>
       <description> jcli casc schema Get the schema of configuration-as-code
@@ -91,7 +91,7 @@ jcli casc schema [flags]  Options  -h, --help help for schema  Options inherited
     <item>
       <title>jcli center</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center/</guid>
       <description> jcli center Manage your update center
@@ -102,7 +102,7 @@ jcli center [flags]  Options  -h, --help help for center  Options inherited from
     <item>
       <title>jcli center download</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</guid>
       <description>jcli center download Download Jenkins
@@ -113,7 +113,7 @@ jcli center download [flags]  Options  -h, --help help for download --lts If you
     <item>
       <title>jcli center identity</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_identity/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_identity/</guid>
       <description> jcli center identity Print the identity of current Jenkins
@@ -124,7 +124,7 @@ jcli center identity [flags]  Options  -h, --help help for identity  Options inh
     <item>
       <title>jcli center mirror</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</guid>
       <description>jcli center mirror Set the update center to a mirror address
@@ -135,7 +135,7 @@ jcli center mirror [flags]  Options  --enable If you want to enable update cente
     <item>
       <title>jcli center start</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_start/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_start/</guid>
       <description>jcli center start Start Jenkins server from a cache directory
@@ -146,7 +146,7 @@ jcli center start [flags]  Options  --admin-can-generate-new-tokens If enabled, 
     <item>
       <title>jcli center upgrade</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</guid>
       <description> jcli center upgrade Upgrade your Jenkins
@@ -157,7 +157,7 @@ jcli center upgrade [flags]  Options  -h, --help help for upgrade  Options inher
     <item>
       <title>jcli center watch</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</guid>
       <description>jcli center watch Watch your update center status
@@ -168,18 +168,18 @@ jcli center watch [flags]  Options  --count int Count of watch (default 9999) -h
     <item>
       <title>jcli completion</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_completion/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_completion/</guid>
-      <description>jcli completion Genereate bash completion scripts
-Synopsis Genereate bash completion scripts
-jcli completion [flags]  Examples # Installing bash completion on macOS using homebrew ## If running Bash 3.2 included with macOS brew install bash-completion ## or, if running Bash 4.1+ brew install bash-completion@2 ## you may need add the completion to your completion directory jcli completion &amp;gt; $(brew --prefix)/etc/bash_completion.d/jcli ## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83.  Options  -h, --help help for completion  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+      <description>jcli completion Generate bash completion scripts
+Synopsis Generate bash completion scripts
+jcli completion [flags]  Examples # Installing bash completion on macOS using homebrew ## If running Bash 3.2 included with macOS brew install bash-completion ## or, if running Bash 4.1+ brew install bash-completion@2 ## you may need add the completion to your completion directory jcli completion &amp;gt; $(brew --prefix)/etc/bash_completion.d/jcli ## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83. # Load the jcli completion code for zsh[1] into the current shell source &amp;lt;(jcli completion --type zsh) # Set the jcli completion code for zsh[1] to autoload on startup jcli completion --type zsh &amp;gt; &amp;quot;${fpath[1]}/_jcli&amp;quot;  Options  -h, --help help for completion --type string Generate different types of shell which are [zsh bash powerShell] (default &amp;quot;bash&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli computer</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer/</guid>
       <description> jcli computer Manage the computers of your Jenkins
@@ -190,7 +190,7 @@ Options  -h, --help help for computer  Options inherited from parent commands  -
     <item>
       <title>jcli computer create</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_create/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_create/</guid>
       <description> jcli computer create Create an Jenkins agent
@@ -201,7 +201,7 @@ jcli computer create [flags]  Examples jcli agent create agent-name  Options  -h
     <item>
       <title>jcli computer delete</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</guid>
       <description> jcli computer delete Delete an agent from Jenkins
@@ -212,7 +212,7 @@ jcli computer delete [flags]  Examples jcli agent delete agent-name  Options  -h
     <item>
       <title>jcli computer launch</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</guid>
       <description>jcli computer launch Launch the agent of your Jenkins
@@ -223,7 +223,7 @@ jcli computer launch [flags]  Examples jcli agent launch agent-name jcli agent l
     <item>
       <title>jcli computer list</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_list/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_list/</guid>
       <description>jcli computer list List all Jenkins agents
@@ -234,7 +234,7 @@ jcli computer list [flags]  Options  --columns string The columns of table (defa
     <item>
       <title>jcli computer log</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_log/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_log/</guid>
       <description> jcli computer log Output the log of the agent
@@ -245,7 +245,7 @@ jcli computer log &amp;lt;name&amp;gt; [flags]  Options  -h, --help help for log
     <item>
       <title>jcli config</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config/</guid>
       <description> jcli config Manage the config of jcli
@@ -256,7 +256,7 @@ jcli config [flags]  Examples  jcli config generate jcli config list jcli config
     <item>
       <title>jcli config add</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</guid>
       <description>jcli config add Add a Jenkins config item
@@ -267,7 +267,7 @@ jcli config add [flags]  Examples jcli config add -n demo  Options  -d, --descri
     <item>
       <title>jcli config edit</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</guid>
       <description> jcli config edit Edit a Jenkins config
@@ -278,7 +278,7 @@ jcli config edit [flags]  Options  -h, --help help for edit  Options inherited f
     <item>
       <title>jcli config generate</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</guid>
       <description> jcli config generate Generate a sample config file for you
@@ -289,7 +289,7 @@ jcli config generate [flags]  Options  -c, --copy Copy the output into clipboard
     <item>
       <title>jcli config list</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</guid>
       <description>jcli config list List all Jenkins config items
@@ -300,29 +300,29 @@ jcli config list [flags]  Options  --columns string The columns of table (defaul
     <item>
       <title>jcli config remove</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</guid>
       <description> jcli config remove Remove a Jenkins config
 Synopsis Remove a Jenkins config
-jcli config remove &amp;lt;name&amp;gt; [flags]  Options  -h, --help help for remove  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+jcli config remove [flags]  Options  -h, --help help for remove  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
     </item>
     
     <item>
       <title>jcli config select</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</guid>
       <description> jcli config select Select one config as current Jenkins
 Synopsis Select one config as current Jenkins
-jcli config select [&amp;lt;name&amp;gt;] [flags]  Options  -h, --help help for select  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+jcli config select [flags]  Options  -h, --help help for select  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
     </item>
     
     <item>
       <title>jcli credential</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_credential/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential/</guid>
       <description> jcli credential Manage the credentials of your Jenkins
@@ -333,7 +333,7 @@ Options  -h, --help help for credential  Options inherited from parent commands 
     <item>
       <title>jcli credential create</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_create/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_create/</guid>
       <description>jcli credential create Create a credential from Jenkins
@@ -344,7 +344,7 @@ jcli credential create [store] [id] [flags]  Options  --desc string The Descript
     <item>
       <title>jcli credential delete</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</guid>
       <description>jcli credential delete Delete a credential from Jenkins
@@ -355,7 +355,7 @@ jcli credential delete [store] [id] [flags]  Options  -b, --batch Batch mode, no
     <item>
       <title>jcli credential list</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_list/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_list/</guid>
       <description>jcli credential list List all credentials of Jenkins
@@ -366,7 +366,7 @@ jcli credential list [flags]  Options  --columns string The columns of table (de
     <item>
       <title>jcli crumb</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</guid>
       <description> jcli crumb Print crumbIssuer of Jenkins
@@ -377,7 +377,7 @@ jcli crumb [flags]  Options  -h, --help help for crumb  Options inherited from p
     <item>
       <title>jcli doc</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_doc/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_doc/</guid>
       <description> jcli doc Generate document for all jcl commands
@@ -388,7 +388,7 @@ jcli doc &amp;lt;output dir&amp;gt; [flags]  Options  -h, --help help for doc  O
     <item>
       <title>jcli job</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job/</guid>
       <description> jcli job Manage the job of your Jenkins
@@ -399,18 +399,18 @@ Options  -h, --help help for job -o, --output string Format the output (default 
     <item>
       <title>jcli job artifact</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</guid>
       <description>jcli job artifact Print the artifact list of target job
 Synopsis Print the artifact list of target job
-jcli job artifact &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --filter stringArray Filter for the list by fields -h, --help help for artifact --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job artifact &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --columns string The columns of table (default &amp;quot;Name,Path,Size&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for artifact --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job artifact download</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</guid>
       <description>jcli job artifact download Download the artifact of target job
@@ -421,18 +421,18 @@ jcli job artifact download &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  -
     <item>
       <title>jcli job build</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</guid>
       <description>jcli job build Build the job of your Jenkins
 Synopsis Build the job of your Jenkins. You need to give the parameters if your pipeline has them. Learn more about it from https://jenkins.io/doc/book/pipeline/syntax/#parameters.
-jcli job build &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode, no need to confirm -h, --help help for build --param string Parameters of the job which is JSON format --param-entry stringArray Parameters of the job which are the entry format, for example: --param-entry name=value  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job build &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for build --param string Parameters of the job which is JSON format --param-entry stringArray Parameters of the job which are the entry format, for example: --param-entry name=value  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job create</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</guid>
       <description> jcli job create Create a job in your Jenkins
@@ -443,7 +443,7 @@ jcli job create &amp;lt;jobName&amp;gt; [flags]  Options  --copy string Copy an 
     <item>
       <title>jcli job delete</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</guid>
       <description> jcli job delete Delete a job in your Jenkins
@@ -454,7 +454,7 @@ jcli job delete &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode
     <item>
       <title>jcli job edit</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</guid>
       <description>jcli job edit Edit the job of your Jenkins
@@ -465,7 +465,7 @@ jcli job edit &amp;lt;jobName&amp;gt; [flags]  Options  -f, --filename string Fi
     <item>
       <title>jcli job history</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</guid>
       <description>jcli job history Print the history of job in your Jenkins
@@ -476,7 +476,7 @@ jcli job history &amp;lt;jobName&amp;gt; [flags]  Options  --columns string The 
     <item>
       <title>jcli job input</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</guid>
       <description> jcli job input Input a job in your Jenkins
@@ -487,7 +487,7 @@ jcli job input &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --action stri
     <item>
       <title>jcli job log</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</guid>
       <description>jcli job log Print the job&amp;rsquo;s log of your Jenkins
@@ -498,7 +498,7 @@ jcli job log &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  -h, --help help
     <item>
       <title>jcli job param</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</guid>
       <description>jcli job param Get parameters of the job of your Jenkins
@@ -509,7 +509,7 @@ jcli job param &amp;lt;jobName&amp;gt; [flags]  Options  --filter stringArray Fi
     <item>
       <title>jcli job search</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</guid>
       <description>jcli job search Print the job of your Jenkins
@@ -520,7 +520,7 @@ jcli job search [flags]  Examples jcli job search [keyword] --name keyword --typ
     <item>
       <title>jcli job stop</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</guid>
       <description> jcli job stop Stop a job build in your Jenkins
@@ -531,29 +531,29 @@ jcli job stop &amp;lt;jobName&amp;gt; [buildNumber] [flags]  Options  -b, --batc
     <item>
       <title>jcli job type</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</guid>
-      <description> jcli job type Print the types of job which in your Jenkins
+      <description>jcli job type Print the types of job which in your Jenkins
 Synopsis Print the types of job which in your Jenkins
-jcli job type [flags]  Options  -h, --help help for type  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+jcli job type [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,Class&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for type --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli open</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_open/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_open/</guid>
-      <description>jcli open Open your Jenkins with a browser
+      <description> jcli open Open your Jenkins with a browser
 Synopsis Open your Jenkins with a browser
-jcli open [config name] [flags]  Examples jcli open -n [config name]  Options  -c, --config Open the configuration page of Jenkins -h, --help help for open -i, --interactive Interactive mode -n, --name string Open a specific Jenkins by name  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli open [flags]  Examples jcli open -n [config name]  Options  -c, --config Open the configuration page of Jenkins -h, --help help for open -i, --interactive Interactive mode  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
     </item>
     
     <item>
       <title>jcli plugin</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</guid>
       <description> jcli plugin Manage the plugins of Jenkins
@@ -564,7 +564,7 @@ Examples  jcli plugin list jcli plugin search github jcli plugin check  Options 
     <item>
       <title>jcli plugin check</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</guid>
       <description> jcli plugin check Check update center server
@@ -575,7 +575,7 @@ jcli plugin check [flags]  Options  -h, --help help for check  Options inherited
     <item>
       <title>jcli plugin create</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</guid>
       <description> jcli plugin create Create a plugin project from the archetypes
@@ -586,7 +586,7 @@ jcli plugin create [flags]  Options  --debug-output If you want the maven output
     <item>
       <title>jcli plugin download</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</guid>
       <description>jcli plugin download Download the plugins
@@ -597,7 +597,7 @@ jcli plugin download &amp;lt;keyword&amp;gt; [flags]  Options  -h, --help help f
     <item>
       <title>jcli plugin install</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</guid>
       <description>jcli plugin install Install the plugins
@@ -608,7 +608,7 @@ jcli plugin install [pluginName] [flags]  Examples jcli plugin install localizat
     <item>
       <title>jcli plugin list</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</guid>
       <description>jcli plugin list Print all the plugins which are installed
@@ -619,7 +619,7 @@ jcli plugin list [flags]  Examples  jcli plugin list --filter name=github jcli p
     <item>
       <title>jcli plugin open</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</guid>
       <description> jcli plugin open Open update center server in browser
@@ -630,7 +630,7 @@ jcli plugin open [flags]  Options  -h, --help help for open  Options inherited f
     <item>
       <title>jcli plugin release</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</guid>
       <description>jcli plugin release Release current plugin project
@@ -641,7 +641,7 @@ jcli plugin release [flags]  Options  --batch Run in non-interactive (batch) (de
     <item>
       <title>jcli plugin search</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</guid>
       <description>jcli plugin search Print the plugins of your Jenkins
@@ -652,7 +652,7 @@ jcli plugin search &amp;lt;keyword&amp;gt; [flags]  Options  --filter stringArra
     <item>
       <title>jcli plugin trend</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</guid>
       <description> jcli plugin trend Show the trend of the plugin
@@ -663,7 +663,7 @@ jcli plugin trend &amp;lt;pluginName&amp;gt; [flags]  Options  -h, --help help f
     <item>
       <title>jcli plugin uninstall</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</guid>
       <description> jcli plugin uninstall Uninstall the plugins
@@ -674,7 +674,7 @@ jcli plugin uninstall [pluginName] [flags]  Options  -h, --help help for uninsta
     <item>
       <title>jcli plugin upgrade</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</guid>
       <description> jcli plugin upgrade Upgrade the specific plugin
@@ -685,7 +685,7 @@ jcli plugin upgrade [plugin name] [flags]  Examples jcli plugin upgrade [tab][ta
     <item>
       <title>jcli plugin upload</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</guid>
       <description>jcli plugin upload Upload a plugin to your Jenkins
@@ -696,7 +696,7 @@ jcli plugin upload [flags]  Examples  jcli plugin upload --remote https://server
     <item>
       <title>jcli queue</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_queue/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue/</guid>
       <description> jcli queue Manage the queue of your Jenkins
@@ -707,7 +707,7 @@ Options  -h, --help help for queue  Options inherited from parent commands  --co
     <item>
       <title>jcli queue cancel</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</guid>
       <description> jcli queue cancel Cancel the queue items of your Jenkins
@@ -718,7 +718,7 @@ jcli queue cancel &amp;lt;id&amp;gt; [flags]  Options  -h, --help help for cance
     <item>
       <title>jcli queue list</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</guid>
       <description>jcli queue list Print the queue of your Jenkins
@@ -729,7 +729,7 @@ jcli queue list [flags]  Options  --columns string The columns of table (default
     <item>
       <title>jcli restart</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_restart/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_restart/</guid>
       <description> jcli restart Restart your Jenkins
@@ -740,7 +740,7 @@ jcli restart [flags]  Options  -b, --batch Batch mode, no need confirm -h, --hel
     <item>
       <title>jcli shell</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_shell/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_shell/</guid>
       <description> jcli shell Create a sub shell so that changes to a specific Jenkins remain local to the shell.
@@ -751,7 +751,7 @@ jcli shell [&amp;lt;name&amp;gt;] [flags]  Options  -h, --help help for shell  O
     <item>
       <title>jcli user</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_user/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_user/</guid>
       <description> jcli user Print the user of your Jenkins
@@ -762,7 +762,7 @@ jcli user [flags]  Options  -h, --help help for user -o, --output string Format 
     <item>
       <title>jcli user create</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</guid>
       <description> jcli user create Create a user for your Jenkins
@@ -773,7 +773,7 @@ jcli user create &amp;lt;username&amp;gt; [password] [flags]  Options  -h, --hel
     <item>
       <title>jcli user delete</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</guid>
       <description> jcli user delete Delete a user for your Jenkins
@@ -784,18 +784,18 @@ jcli user delete &amp;lt;username&amp;gt; [flags]  Options  -b, --batch Batch mo
     <item>
       <title>jcli user edit</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</guid>
       <description> jcli user edit Edit the user of your Jenkins
 Synopsis Edit the user of your Jenkins
-jcli user edit [flags]  Options  -d, --desc Edit the description -h, --help help for edit  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
+jcli user edit [flags]  Options  -d, --desc string Edit the description -h, --help help for edit  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli user token</title>
       <link>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</link>
-      <pubDate>Wed, 25 Dec 2019 12:14:59 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 11:36:07 +0000</pubDate>
       
       <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</guid>
       <description>jcli user token Token the user of your Jenkins

@@ -12,18 +12,18 @@
     <title>jcli completion :: Jenkinc CLI</title>
 
     
-    <link href="/css/nucleus.css?1577276102" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1577276102" rel="stylesheet">
-    <link href="/css/hybrid.css?1577276102" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1577276102" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1577276102" rel="stylesheet">
-    <link href="/css/auto-complete.css?1577276102" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1577276102" rel="stylesheet">
-    <link href="/css/theme.css?1577276102" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1577276102" rel="stylesheet">
+    <link href="/css/nucleus.css?1581766570" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1581766570" rel="stylesheet">
+    <link href="/css/hybrid.css?1581766570" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1581766570" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1581766570" rel="stylesheet">
+    <link href="/css/auto-complete.css?1581766570" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1581766570" rel="stylesheet">
+    <link href="/css/theme.css?1581766570" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1581766570" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1577276102"></script>
+    <script src="/js/jquery-3.3.1.min.js?1581766570"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1577276102"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1577276102"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1581766570"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1581766570"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/jcli.jenkins-zh.cn\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1577276102"></script>
+<script type="text/javascript" src="/js/search.js?1581766570"></script>
 
     
   </div>
@@ -170,6 +170,30 @@
         ">
       <a href="/zh/user/">
           用户
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/credential/" title="凭据" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/zh/credential/">
+          凭据
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1778,11 +1802,11 @@
 
 <h2 id="jcli-completion">jcli completion</h2>
 
-<p>生成 bash 自动补全的脚本</p>
+<p>Generate bash completion scripts</p>
 
 <h3 id="synopsis">Synopsis</h3>
 
-<p>生成 bash 自动补全的脚本</p>
+<p>Generate bash completion scripts</p>
 
 <pre><code>jcli completion [flags]
 </code></pre>
@@ -1797,11 +1821,17 @@
 	## you may need add the completion to your completion directory
 	jcli completion &gt; $(brew --prefix)/etc/bash_completion.d/jcli
 	## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83.
+    
+    # Load the jcli completion code for zsh[1] into the current shell
+	source &lt;(jcli completion --type zsh)
+	# Set the jcli completion code for zsh[1] to autoload on startup
+	jcli completion --type zsh &gt; &quot;${fpath[1]}/_jcli&quot;
 </code></pre>
 
 <h3 id="options">Options</h3>
 
-<pre><code>  -h, --help   help for completion
+<pre><code>  -h, --help          help for completion
+      --type string   Generate different types of shell which are [zsh bash powerShell] (default &quot;bash&quot;)
 </code></pre>
 
 <h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
@@ -1826,10 +1856,9 @@
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
-
 
         
         </div> 
@@ -1864,6 +1893,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3138,19 +3183,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1577276102"></script>
-    <script src="/js/perfect-scrollbar.min.js?1577276102"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1577276102"></script>
-    <script src="/js/jquery.sticky.js?1577276102"></script>
-    <script src="/js/featherlight.min.js?1577276102"></script>
-    <script src="/js/highlight.pack.js?1577276102"></script>
+    <script src="/js/clipboard.min.js?1581766570"></script>
+    <script src="/js/perfect-scrollbar.min.js?1581766570"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1581766570"></script>
+    <script src="/js/jquery.sticky.js?1581766570"></script>
+    <script src="/js/featherlight.min.js?1581766570"></script>
+    <script src="/js/highlight.pack.js?1581766570"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1577276102"></script>
-    <script src="/js/learn.js?1577276102"></script>
-    <script src="/js/hugo-learn.js?1577276102"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1581766570"></script>
+    <script src="/js/learn.js?1581766570"></script>
+    <script src="/js/hugo-learn.js?1581766570"></script>
 
-    <link href="/mermaid/mermaid.css?1577276102" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1577276102"></script>
+    <link href="/mermaid/mermaid.css?1581766570" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1581766570"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
