@@ -12,18 +12,18 @@
     <title> :: Jenkinc CLI</title>
 
     
-    <link href="/css/nucleus.css?1581766570" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1581766570" rel="stylesheet">
-    <link href="/css/hybrid.css?1581766570" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1581766570" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1581766570" rel="stylesheet">
-    <link href="/css/auto-complete.css?1581766570" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1581766570" rel="stylesheet">
-    <link href="/css/theme.css?1581766570" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1581766570" rel="stylesheet">
+    <link href="/css/nucleus.css?1581845533" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1581845533" rel="stylesheet">
+    <link href="/css/hybrid.css?1581845533" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1581845533" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1581845533" rel="stylesheet">
+    <link href="/css/auto-complete.css?1581845533" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1581845533" rel="stylesheet">
+    <link href="/css/theme.css?1581845533" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1581845533" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1581766570"></script>
+    <script src="/js/jquery-3.3.1.min.js?1581845533"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1581766570"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1581766570"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1581845533"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1581845533"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/jcli.jenkins-zh.cn\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1581766570"></script>
+<script type="text/javascript" src="/js/search.js?1581845533"></script>
 
     
   </div>
@@ -1726,6 +1726,22 @@
  
 
 
+<p><a href="https://github.com/jenkins-zh/jenkins-cli/blob/master/README.md">English</a></p>
+
+<h1 id="jenkins-cli">Jenkins CLI</h1>
+
+<p><a href="https://goreportcard.com/report/jenkins-zh/jenkins-cli"><img src="https://goreportcard.com/badge/jenkins-zh/jenkins-cli" alt="Go Report Card" /></a>
+<a href="https://sonarcloud.io/dashboard?id=jenkins-zh_jenkins-cli"><img src="https://sonarcloud.io/api/project_badges/measure?project=jenkins-zh_jenkins-cli&amp;metric=alert_status" alt="Quality Gate Status" /></a>
+<a href="https://godoc.org/github.com/jenkins-zh/jenkins-cli"><img src="http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square" alt="GoDoc" /></a>
+<img src="https://img.shields.io/sonar/coverage/jenkins-zh_jenkins-cli?server=https%3A%2F%2Fsonarcloud.io" alt="Sonar Coverage" />
+<a href="https://travis-ci.org/jenkins-zh/jenkins-cli"><img src="https://img.shields.io/travis/jenkins-zh/jenkins-cli.svg?logo=travis&amp;label=build&amp;logoColor=white" alt="Travis" /></a>
+<a href="https://github.com/jenkins-zh/jenkins-cli/graphs/contributors"><img src="https://img.shields.io/github/contributors/jenkins-zh/jenkins-cli.svg" alt="Contributors" /></a>
+<a href="https://github.com/jenkins-zh/jenkins-cli/releases/latest"><img src="https://img.shields.io/github/release/jenkins-zh/jenkins-cli.svg?label=release" alt="GitHub release" /></a>
+<img src="https://img.shields.io/github/downloads/jenkins-zh/jenkins-cli/total" alt="GitHub All Releases" />
+<a href="https://hub.docker.com/r/jenkinszh/jcli/tags"><img src="https://img.shields.io/docker/pulls/jenkinszh/jcli.svg" alt="Docker Pulls" /></a>
+<img src="https://img.shields.io/github/languages/code-size/jenkins-zh/jenkins-cli" alt="GitHub code size in bytes" />
+<a href="https://gitter.im/jenkinsci/jenkins-cli?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/jenkinsci/jenkins-cli.svg" alt="Gitter" /></a></p>
+
 <p>Jenkins CLI 可以帮忙你轻松地管理 Jenkins。不管你是一名插件开发者、管理员或者只是一个普通的 Jenkins 用户，它都是为你而生的！</p>
 
 <h1 id="特性">特性</h1>
@@ -1741,7 +1757,7 @@
 
 <h1 id="安装">安装</h1>
 
-<p>我们目前支持的操作系统包括：MacOS、Linux 以及 Widnows。</p>
+<p>我们目前支持的操作系统包括：MacOS、Linux 以及 Windows。</p>
 
 <h2 id="mac">mac</h2>
 
@@ -1770,15 +1786,27 @@ sudo mv jcli /usr/local/bin/
 <ul>
 <li><a href="https://gofi.sh/">GoFish</a> 的用户可以使用命令 <code>gofish install jcli</code> 来安装</li>
 <li><a href="https://scoop.sh/">Scoop</a> 的用户可以使用命令 <code>scoop install jcli</code> 来安装</li>
+<li><a href="https://chocolatey.org/packages/jcli">Chocolatey</a> 的用户可以使用命令 <code>choco install jcli</code> 来安装</li>
+<li><a href="https://snapcraft.io/jcli">Snapcraft</a> 的用户可以使用命令 <code>sudo snap install jcli</code> 来安装</li>
 </ul>
+
+<p>了解更多<a href="doc/download-zh.md">如何下载 jcli</a>.
+你可以从<a href="http://somsubhra.com/github-release-stats/?username=jenkins-zh&amp;repository=jenkins-cli">这里</a>获取下载的统计信息。</p>
 
 <h1 id="入门">入门</h1>
 
-<p>当安装 <code>jcli</code> 以后。你需要提供一份配置文件。请执行命令 <code>jcli config generate</code>，该命令会帮助你编辑配置文件 <code>~/.jenkins-cli.yaml</code> ，你需要根据实际的 Jenkins 配置情况做相应的修改。</p>
+<p>查阅<a href="http://jcli.jenkins-zh.cn/">官方文档</a>可以了解到更多有关如何使用 <code>jcli</code> 的信息。</p>
 
 <h1 id="贡献">贡献</h1>
 
-<p>如果你对该项目感兴趣，请首先仔细阅读我们的<a href="https://github.com/jenkins-zh/jenkins-cli/blob/master/CONTRIBUTING.md">贡献指南</a>。我们欢迎任何形式的贡献。</p>
+<p>如果你对该项目感兴趣，请首先仔细阅读我们的<a href="CONTRIBUTING.md">贡献指南</a>。我们欢迎任何形式的贡献。</p>
+
+<p>感谢 JetBrains 为我们提供了开源许可证。<br />
+<a href="https://www.jetbrains.com/?from=jenkins-cli"><img src="./goland.svg" alt="goland.svg" /></a></p>
+
+<h1 id="点赞数趋势图">点赞数趋势图</h1>
+
+<p><a href="https://starchart.cc/jenkins-zh/jenkins-cli"><img src="https://starchart.cc/jenkins-zh/jenkins-cli.svg" alt="Stargazers over time" /></a></p>
 	
   
         
@@ -3094,19 +3122,19 @@ sudo mv jcli /usr/local/bin/
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1581766570"></script>
-    <script src="/js/perfect-scrollbar.min.js?1581766570"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1581766570"></script>
-    <script src="/js/jquery.sticky.js?1581766570"></script>
-    <script src="/js/featherlight.min.js?1581766570"></script>
-    <script src="/js/highlight.pack.js?1581766570"></script>
+    <script src="/js/clipboard.min.js?1581845533"></script>
+    <script src="/js/perfect-scrollbar.min.js?1581845533"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1581845533"></script>
+    <script src="/js/jquery.sticky.js?1581845533"></script>
+    <script src="/js/featherlight.min.js?1581845533"></script>
+    <script src="/js/highlight.pack.js?1581845533"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1581766570"></script>
-    <script src="/js/learn.js?1581766570"></script>
-    <script src="/js/hugo-learn.js?1581766570"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1581845533"></script>
+    <script src="/js/learn.js?1581845533"></script>
+    <script src="/js/hugo-learn.js?1581845533"></script>
 
-    <link href="/mermaid/mermaid.css?1581766570" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1581766570"></script>
+    <link href="/mermaid/mermaid.css?1581845533" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1581845533"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
