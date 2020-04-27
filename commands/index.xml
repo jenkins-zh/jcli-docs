@@ -2,142 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command on Jenkinc CLI</title>
-    <link>http://jcli.jenkins-zh.cn/commands/</link>
+    <link>https://jcli.jenkins-zh.cn/commands/</link>
     <description>Recent content in Command on Jenkinc CLI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 09:32:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 06:50:25 +0000</lastBuildDate>
     
-	<atom:link href="http://jcli.jenkins-zh.cn/commands/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jcli.jenkins-zh.cn/commands/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>jcli</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli/</guid>
-      <description>jcli jcli is a tool which could help you with your multiple Jenkins
-Synopsis jcli is Jenkins CLI which could help with your multiple Jenkins, Manage your Jenkins and your pipelines More information could found at https://jenkins-zh.cn
-jcli [flags]  Options  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command -h, --help help for jcli --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins -v, --version Print the version of Jenkins CLI  SEE ALSO  jcli casc - Configuration as Code jcli center - Manage your update center jcli completion - Generate bash completion scripts jcli computer - Manage the computers of your Jenkins jcli config - Manage the config of jcli jcli credential - Manage the credentials of your Jenkins jcli crumb - Print crumbIssuer of Jenkins jcli doc - Generate document for all jcl commands jcli job - Manage the job of your Jenkins jcli open - Open your Jenkins with a browser jcli plugin - Manage the plugins of Jenkins jcli queue - Manage the queue of your Jenkins jcli restart - Restart your Jenkins jcli shell - Create a sub shell so that changes to a specific Jenkins remain local to the shell.</description>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli/</guid>
+      <description>jcli Jenkins CLI written by golang which could help you with your multiple Jenkins
+Synopsis Jenkins CLI written by golang which could help you with your multiple Jenkins,
+We&amp;rsquo;d love to hear your feedback at https://github.com/jenkins-zh/jenkins-cli/issues
+Options  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command -h, --help help for jcli --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code jcli center - Manage your update center jcli completion - Generate shell completion scripts jcli computer - Manage the computers of your Jenkins jcli config - Manage the config of jcli jcli credential - Manage the credentials of your Jenkins jcli crumb - Print crumbIssuer of Jenkins jcli cwp - Custom Jenkins WAR packager for Jenkins jcli doc - Generate document for all jcl commands jcli job - Manage the job of your Jenkins jcli open - Open your Jenkins with a browser jcli plugin - Manage the plugins of Jenkins jcli queue - Manage the queue of your Jenkins jcli restart - Restart your Jenkins jcli shell - Create a sub shell so that changes to a specific Jenkins remain local to the shell.</description>
     </item>
     
     <item>
       <title>jcli casc</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc/</guid>
       <description> jcli casc Configuration as Code
 Synopsis Configuration as Code
-Options  -h, --help help for casc  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli casc apply - Apply config through configuration-as-code jcli casc export - Export the config from configuration-as-code jcli casc open - Open Configuration as Code page in browser jcli casc reload - Reload config through configuration-as-code jcli casc schema - Get the schema of configuration-as-code  </description>
+Options  -h, --help help for casc  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli casc apply - Apply config through configuration-as-code jcli casc export - Export the config from configuration-as-code jcli casc open - Open Configuration as Code page in browser jcli casc reload - Reload config through configuration-as-code jcli casc schema - Get the schema of configuration-as-code  </description>
     </item>
     
     <item>
       <title>jcli casc apply</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc_apply/</guid>
       <description> jcli casc apply Apply config through configuration-as-code
 Synopsis Apply config through configuration-as-code
-jcli casc apply [flags]  Options  -h, --help help for apply  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
+jcli casc apply [flags]  Options  -h, --help help for apply  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
     </item>
     
     <item>
       <title>jcli casc export</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_export/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc_export/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_export/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc_export/</guid>
       <description> jcli casc export Export the config from configuration-as-code
 Synopsis Export the config from configuration-as-code
-jcli casc export [flags]  Options  -h, --help help for export  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
+jcli casc export [flags]  Options  -h, --help help for export  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
     </item>
     
     <item>
       <title>jcli casc open</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_open/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc_open/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_open/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc_open/</guid>
       <description> jcli casc open Open Configuration as Code page in browser
 Synopsis Open Configuration as Code page in browser
-jcli casc open [flags]  Options  -h, --help help for open  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
+jcli casc open [flags]  Options  -b, --browser string Open Jenkins with a specific browser -h, --help help for open  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
     </item>
     
     <item>
       <title>jcli casc reload</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc_reload/</guid>
       <description> jcli casc reload Reload config through configuration-as-code
 Synopsis Reload config through configuration-as-code
-jcli casc reload [flags]  Options  -h, --help help for reload  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
+jcli casc reload [flags]  Options  -h, --help help for reload  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
     </item>
     
     <item>
       <title>jcli casc schema</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_casc_schema/</guid>
       <description> jcli casc schema Get the schema of configuration-as-code
 Synopsis Get the schema of configuration-as-code
-jcli casc schema [flags]  Options  -h, --help help for schema  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
+jcli casc schema [flags]  Options  -h, --help help for schema  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli casc - Configuration as Code  </description>
     </item>
     
     <item>
       <title>jcli center</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center/</guid>
-      <description> jcli center Manage your update center
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center/</guid>
+      <description>jcli center Manage your update center
 Synopsis Manage your update center
-jcli center [flags]  Options  -h, --help help for center  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli center download - Download Jenkins jcli center identity - Print the identity of current Jenkins jcli center mirror - Set the update center to a mirror address jcli center start - Start Jenkins server from a cache directory jcli center upgrade - Upgrade your Jenkins jcli center watch - Watch your update center status  </description>
+jcli center [flags]  Options  -h, --help help for center  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli center download - Download jenkins.</description>
     </item>
     
     <item>
       <title>jcli center download</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_download/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_download/</guid>
-      <description>jcli center download Download Jenkins
-Synopsis Download Jenkins from a mirror site. You can get more mirror sites from https://jenkins-zh.cn/tutorial/management/mirror/
-jcli center download [flags]  Options  -h, --help help for download --lts If you want to download Jenkins as LTS (default true) -m, --mirror string The mirror site of Jenkins (default &amp;quot;default&amp;quot;) -o, --output string The file of output (default &amp;quot;jenkins.war&amp;quot;) -p, --progress If you want to show the download progress (default true) --war-version string Version of the Jenkins which you want to download  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_download/</guid>
+      <description>jcli center download Download jenkins.war
+Synopsis Download jenkins.war from a mirror site. You can get more mirror sites from https://jenkins-zh.cn/tutorial/management/mirror/ If you want to download different formulas of jenkins.war, please visit the following project https://github.com/jenkins-zh/docker-zh
+jcli center download [flags]  Options  --formula string The formula of jenkins.war, only support zh currently -h, --help help for download --lts If you want to download Jenkins as LTS (default true) -m, --mirror string The mirror site of Jenkins (default &amp;quot;default&amp;quot;) -o, --output string The file of output -p, --progress If you want to show the download progress (default true) --war-version string Version of the Jenkins which you want to download  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli center identity</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_identity/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_identity/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_identity/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_identity/</guid>
       <description> jcli center identity Print the identity of current Jenkins
 Synopsis Print the identity of current Jenkins
-jcli center identity [flags]  Options  -h, --help help for identity  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli center - Manage your update center  </description>
+jcli center identity [flags]  Options  -h, --help help for identity  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli center - Manage your update center  </description>
     </item>
     
     <item>
       <title>jcli center mirror</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_mirror/</guid>
       <description>jcli center mirror Set the update center to a mirror address
 Synopsis Set the update center to a mirror address
-jcli center mirror [flags]  Options  --enable If you want to enable update center server (default true) -h, --help help for mirror --mirror-url string The address of update center site mirror (default &amp;quot;https://updates.jenkins-zh.cn/update-center.json&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli center mirror [flags]  Options  --enable If you want to enable update center server (default true) -h, --help help for mirror --mirror-url string The address of update center site mirror (default &amp;quot;https://updates.jenkins-zh.cn/update-center.json&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli center start</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_start/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_start/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_start/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_start/</guid>
       <description>jcli center start Start Jenkins server from a cache directory
 Synopsis Start Jenkins server from a cache directory
 jcli center start [flags]  Options  --admin-can-generate-new-tokens If enabled, the users with administer permissions can generate new tokens for other users --concurrent-indexing int Concurrent indexing limit, take this value only it is bigger than -1 (default -1) --context string Web context of Jenkins server (default &amp;quot;/&amp;quot;) --download If you want to download jenkins.</description>
@@ -145,662 +146,783 @@ jcli center start [flags]  Options  --admin-can-generate-new-tokens If enabled, 
     
     <item>
       <title>jcli center upgrade</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_upgrade/</guid>
       <description> jcli center upgrade Upgrade your Jenkins
 Synopsis Upgrade your Jenkins
-jcli center upgrade [flags]  Options  -h, --help help for upgrade  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli center - Manage your update center  </description>
+jcli center upgrade [flags]  Options  -h, --help help for upgrade  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli center - Manage your update center  </description>
     </item>
     
     <item>
       <title>jcli center watch</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_center_watch/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_center_watch/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_center_watch/</guid>
       <description>jcli center watch Watch your update center status
 Synopsis Watch your update center status
-jcli center watch [flags]  Options  --count int Count of watch (default 9999) -h, --help help for watch -i, --interval int Interval of watch (default 1) --util-install-complete The watch will be continue util all Jenkins plugins installation is completed --util-need-restart The watch will be continue util Jenkins needs restart  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli center watch [flags]  Options  --count int Count of watch (default 9999) -h, --help help for watch -i, --interval int Interval of watch (default 1) --util-install-complete The watch will be continue util all Jenkins plugins installation is completed --util-need-restart The watch will be continue util Jenkins needs restart  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli completion</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_completion/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_completion/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_completion/</guid>
-      <description>jcli completion Generate bash completion scripts
-Synopsis Generate bash completion scripts
-jcli completion [flags]  Examples # Installing bash completion on macOS using homebrew ## If running Bash 3.2 included with macOS brew install bash-completion ## or, if running Bash 4.1+ brew install bash-completion@2 ## you may need add the completion to your completion directory jcli completion &amp;gt; $(brew --prefix)/etc/bash_completion.d/jcli ## If you get trouble, please visit https://github.com/jenkins-zh/jenkins-cli/issues/83. # Load the jcli completion code for zsh[1] into the current shell source &amp;lt;(jcli completion --type zsh) # Set the jcli completion code for zsh[1] to autoload on startup jcli completion --type zsh &amp;gt; &amp;quot;${fpath[1]}/_jcli&amp;quot;  Options  -h, --help help for completion --type string Generate different types of shell which are [zsh bash powerShell] (default &amp;quot;bash&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_completion/</guid>
+      <description>jcli completion Generate shell completion scripts
+Synopsis Generate shell completion scripts Normally you don&amp;rsquo;t need to do more extra work to have this feature if you&amp;rsquo;ve installed jcli by brew
+jcli completion [flags]  Examples Installing bash completion on macOS using homebrew If running Bash 3.2 included with macOS brew install bash-completion or, if running Bash 4.1+ brew install bash-completion@2 You may need to add the completion to your completion directory by the following command jcli completion &amp;gt; $(brew --prefix)/etc/bash_completion.</description>
     </item>
     
     <item>
       <title>jcli computer</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer/</guid>
       <description> jcli computer Manage the computers of your Jenkins
 Synopsis Manage the computers of your Jenkins
-Options  -h, --help help for computer  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli computer create - Create an Jenkins agent jcli computer delete - Delete an agent from Jenkins jcli computer launch - Launch the agent of your Jenkins jcli computer list - List all Jenkins agents jcli computer log - Output the log of the agent  </description>
+Options  -h, --help help for computer  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli computer create - Create an Jenkins agent jcli computer delete - Delete an agent from Jenkins jcli computer launch - Launch the agent of your Jenkins jcli computer list - List all Jenkins agents jcli computer log - Output the log of the agent  </description>
     </item>
     
     <item>
       <title>jcli computer create</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_create/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer_create/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_create/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer_create/</guid>
       <description> jcli computer create Create an Jenkins agent
 Synopsis Create an Jenkins agent It can only create a JNLP agent.
-jcli computer create [flags]  Examples jcli agent create agent-name  Options  -h, --help help for create  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
+jcli computer create [flags]  Examples jcli agent create agent-name  Options  -h, --help help for create  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli computer delete</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer_delete/</guid>
       <description> jcli computer delete Delete an agent from Jenkins
 Synopsis Delete an agent from Jenkins
-jcli computer delete [flags]  Examples jcli agent delete agent-name  Options  -h, --help help for delete  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
+jcli computer delete [flags]  Examples jcli agent delete agent-name  Options  -h, --help help for delete  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli computer launch</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer_launch/</guid>
       <description>jcli computer launch Launch the agent of your Jenkins
 Synopsis Launch the agent of your Jenkins
-jcli computer launch [flags]  Examples jcli agent launch agent-name jcli agent launch agent-name --type jnlp  Options  -h, --help help for launch --show-progress Show the progress of downloading agent.jar (default true) --type string The type of agent, include jnlp  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli computer launch [flags]  Examples jcli agent launch agent-name jcli agent launch agent-name --type jnlp  Options  -h, --help help for launch --show-progress Show the progress of downloading agent.jar (default true) --type string The type of agent, include jnlp  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli computer list</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_list/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_list/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer_list/</guid>
       <description>jcli computer list List all Jenkins agents
 Synopsis List all Jenkins agents
-jcli computer list [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,NumExecutors,Description,Offline&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli computer list [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,NumExecutors,Description,Offline&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli computer log</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_computer_log/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_computer_log/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_computer_log/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_computer_log/</guid>
       <description> jcli computer log Output the log of the agent
 Synopsis Output the log of the agent
-jcli computer log &amp;lt;name&amp;gt; [flags]  Options  -h, --help help for log  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
+jcli computer log &amp;lt;name&amp;gt; [flags]  Options  -h, --help help for log  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli computer - Manage the computers of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli config</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config/</guid>
-      <description> jcli config Manage the config of jcli
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config/</guid>
+      <description>jcli config Manage the config of jcli
 Synopsis Manage the config of jcli
-jcli config [flags]  Examples  jcli config generate jcli config list jcli config edit  Options  -h, --help help for config  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli config add - Add a Jenkins config item jcli config edit - Edit a Jenkins config jcli config generate - Generate a sample config file for you jcli config list - List all Jenkins config items jcli config remove - Remove a Jenkins config jcli config select - Select one config as current Jenkins  </description>
+jcli config [flags]  Examples  jcli config generate jcli config list jcli config edit  Options  --detail Show the all detail of current configuration -h, --help help for config  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli config add</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_add/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_add/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_add/</guid>
       <description>jcli config add Add a Jenkins config item
 Synopsis Add a Jenkins config item
-jcli config add [flags]  Examples jcli config add -n demo  Options  -d, --description string Description of the Jenkins -h, --help help for add -n, --name string Name of the Jenkins -a, --proxyAuth string ProxyAuth of the Jenkins  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli config add [flags]  Examples jcli config add -n demo  Options  -d, --description string Description of the Jenkins -h, --help help for add -n, --name string Name of the Jenkins -a, --proxyAuth string ProxyAuth of the Jenkins  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
+    </item>
+    
+    <item>
+      <title>jcli config clean</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_clean/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_clean/</guid>
+      <description>jcli config clean Clean up some unavailable config items
+Synopsis Clean up some unavailable config items
+jcli config clean [flags]  Options  --clean-timeout Clean the config items when timeout with API request -h, --help help for clean -t, --timeout int Timeout in second value when checking with the Jenkins URL (default 5)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli config edit</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_edit/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_edit/</guid>
-      <description> jcli config edit Edit a Jenkins config
-Synopsis Edit a Jenkins config
-jcli config edit [flags]  Options  -h, --help help for edit  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_edit/</guid>
+      <description>jcli config edit Edit a Jenkins config
+Synopsis Edit a Jenkins config notepad is the default editor of Windows, vim is the default editor of unix. But if the environment variable &amp;ldquo;VISUAL&amp;rdquo; or &amp;ldquo;EDITOR&amp;rdquo; exists, jcli will take it. For example, you can set it under unix like this: export VISUAL=vi
+jcli config edit [flags]  Options  -h, --help help for edit  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli config generate</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_generate/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_generate/</guid>
-      <description> jcli config generate Generate a sample config file for you
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_generate/</guid>
+      <description>jcli config generate Generate a sample config file for you
 Synopsis Generate a sample config file for you
-jcli config generate [flags]  Options  -c, --copy Copy the output into clipboard -h, --help help for generate -i, --interactive Interactive mode (default true)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+jcli config generate [flags]  Options  -c, --copy Copy the output into clipboard -h, --help help for generate -i, --interactive Interactive mode (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli config list</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_list/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_list/</guid>
       <description>jcli config list List all Jenkins config items
 Synopsis List all Jenkins config items
-jcli config list [flags]  Options  --columns string The columns of table (default &amp;quot;Name,URL,Description&amp;quot;) --config string The type of config items, contains PreHooks, PostHooks, Mirrors, PluginSuites (default &amp;quot;JenkinsServers&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli config list [flags]  Options  --columns string The columns of table (default &amp;quot;Name,URL,Description&amp;quot;) --config string The type of config items, contains PreHooks, PostHooks, Mirrors, PluginSuites (default &amp;quot;JenkinsServers&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
+    </item>
+    
+    <item>
+      <title>jcli config plugin</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin/</guid>
+      <description> jcli config plugin Manage plugins for jcli
+Synopsis Manage plugins for jcli If you want to submit a plugin for jcli, please see also the following project. https://github.com/jenkins-zh/jcli-plugins
+Options  -h, --help help for plugin  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli jcli config plugin fetch - fetch metadata of plugins jcli config plugin install - install a jcli plugin jcli config plugin list - list all installed plugins  </description>
+    </item>
+    
+    <item>
+      <title>jcli config plugin fetch</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_fetch/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_fetch/</guid>
+      <description>jcli config plugin fetch fetch metadata of plugins
+Synopsis fetch metadata of plugins The official metadata git repository is https://github.com/jenkins-zh/jcli-plugins, but you can change it by giving a command parameter.
+jcli config plugin fetch [flags]  Options  -h, --help help for fetch -p, --password string The password of git repository --plugin-repo string The plugin git repository URL (default &amp;quot;https://github.com/jenkins-zh/jcli-plugins/&amp;quot;) --reset If you want to reset the git local repo when pulling it (default true) --ssh-key-file string SSH key file (default &amp;quot;/home/runner/.</description>
+    </item>
+    
+    <item>
+      <title>jcli config plugin install</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_install/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_install/</guid>
+      <description> jcli config plugin install install a jcli plugin
+Synopsis install a jcli plugin
+jcli config plugin install [flags]  Options  -h, --help help for install --show-progress If you want to show the progress of download (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config plugin - Manage plugins for jcli  </description>
+    </item>
+    
+    <item>
+      <title>jcli config plugin list</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_list/</guid>
+      <description>jcli config plugin list list all installed plugins
+Synopsis list all installed plugins
+jcli config plugin list [flags]  Options  --columns string The columns of table (default &amp;quot;Use,Version,DownloadLink&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
+    </item>
+    
+    <item>
+      <title>jcli config plugin uninstall</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_uninstall/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_plugin_uninstall/</guid>
+      <description> jcli config plugin uninstall Remove a plugin
+Synopsis Remove a plugin
+jcli config plugin uninstall [flags]  Options  -h, --help help for uninstall  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config plugin - Manage plugins for jcli  </description>
     </item>
     
     <item>
       <title>jcli config remove</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_remove/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_remove/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_remove/</guid>
       <description> jcli config remove Remove a Jenkins config
 Synopsis Remove a Jenkins config
-jcli config remove [flags]  Options  -h, --help help for remove  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+jcli config remove [flags]  Options  -h, --help help for remove  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
     </item>
     
     <item>
       <title>jcli config select</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_config_select/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_config_select/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_config_select/</guid>
       <description> jcli config select Select one config as current Jenkins
 Synopsis Select one config as current Jenkins
-jcli config select [flags]  Options  -h, --help help for select  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
+jcli config select [flags]  Options  -h, --help help for select  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli config - Manage the config of jcli  </description>
     </item>
     
     <item>
       <title>jcli credential</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_credential/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_credential/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_credential/</guid>
       <description> jcli credential Manage the credentials of your Jenkins
 Synopsis Manage the credentials of your Jenkins
-Options  -h, --help help for credential  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli credential create - Create a credential from Jenkins jcli credential delete - Delete a credential from Jenkins jcli credential list - List all credentials of Jenkins  </description>
+Options  -h, --help help for credential  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli credential create - Create a credential from Jenkins jcli credential delete - Delete a credential from Jenkins jcli credential list - List all credentials of Jenkins  </description>
     </item>
     
     <item>
       <title>jcli credential create</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_create/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_credential_create/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_create/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_credential_create/</guid>
       <description>jcli credential create Create a credential from Jenkins
 Synopsis Create a credential from Jenkins
-jcli credential create [store] [id] [flags]  Options  --desc string The Description of Jenkins credentials -h, --help help for create --id string The ID of Jenkins credentials --password string The Password of Jenkins credentials --secret string The Secret of Jenkins credentials --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;) --type string The type of Jenkins credentials which could be: basic, secret (default &amp;quot;basic&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli credential create [flags]  Options  --credential-id string The ID of Jenkins credentials --credential-password string The Password of Jenkins credentials --credential-username string The Username of Jenkins credentials --desc string The Description of Jenkins credentials -h, --help help for create --scope string The scope of Jenkins credentials which might be GLOBAL or SYSTEM (default &amp;quot;GLOBAL&amp;quot;) --secret string The Secret of Jenkins credentials --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;) --type string The type of Jenkins credentials which could be: basic, secret (default &amp;quot;basic&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli credential delete</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_credential_delete/</guid>
       <description>jcli credential delete Delete a credential from Jenkins
 Synopsis Delete a credential from Jenkins
-jcli credential delete [store] [id] [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete --id string The ID of Jenkins credentials --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli credential delete [store] [id] [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete --id string The ID of Jenkins credentials --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli credential list</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_credential_list/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_credential_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_credential_list/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_credential_list/</guid>
       <description>jcli credential list List all credentials of Jenkins
 Synopsis List all credentials of Jenkins
-jcli credential list [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,ID,TypeName,Description&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;) --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli credential list [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,ID,TypeName,Description&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;) --store string The store name of Jenkins credentials (default &amp;quot;system&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli crumb</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_crumb/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_crumb/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_crumb/</guid>
       <description> jcli crumb Print crumbIssuer of Jenkins
 Synopsis Print crumbIssuer of Jenkins
-jcli crumb [flags]  Options  -h, --help help for crumb  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
+jcli crumb [flags]  Options  -h, --help help for crumb  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins  </description>
+    </item>
+    
+    <item>
+      <title>jcli cwp</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_cwp/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_cwp/</guid>
+      <description>jcli cwp Custom Jenkins WAR packager for Jenkins
+Synopsis Custom Jenkins WAR packager for Jenkins This&amp;rsquo;s a wrapper of https://github.com/jenkinsci/custom-war-packager
+jcli cwp [flags]  Options  --batch-mode Enables the batch mode for the build --bom-path string Path to the BOM file. If defined, it will override settings in Config YAML --config-path string Path to the configuration YAML. See the tool&#39;s README for format --demo Enables demo mode with predefined config file --environment string Environment to be used -h, --help help for cwp --install-artifacts If set, the final artifacts will be automatically installed to the local repository (current version - only WAR) --local-cache string The local cache directory (default &amp;quot;/home/runner/.</description>
     </item>
     
     <item>
       <title>jcli doc</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_doc/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_doc/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_doc/</guid>
-      <description> jcli doc Generate document for all jcl commands
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_doc/</guid>
+      <description>jcli doc Generate document for all jcl commands
 Synopsis Generate document for all jcl commands
-jcli doc &amp;lt;output dir&amp;gt; [flags]  Options  -h, --help help for doc  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
+jcli doc [flags]  Examples jcli doc tmp jcli doc --doc-type ManPage /usr/local/share/man/man1  Options  --doc-type string Which type of document will generate (default &amp;quot;Markdown&amp;quot;) -h, --help help for doc  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job/</guid>
-      <description> jcli job Manage the job of your Jenkins
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job/</guid>
+      <description>jcli job Manage the job of your Jenkins
 Synopsis Manage the job of your Jenkins Editing the pipeline job needs to install a plugin which is pipeline-restful-api https://plugins.jenkins.io/pipeline-restful-api
-Options  -h, --help help for job -o, --output string Format the output (default &amp;quot;json&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli job artifact - Print the artifact list of target job jcli job build - Build the job of your Jenkins jcli job create - Create a job in your Jenkins jcli job delete - Delete a job in your Jenkins jcli job edit - Edit the job of your Jenkins jcli job history - Print the history of job in your Jenkins jcli job input - Input a job in your Jenkins jcli job log - Print the job&amp;rsquo;s log of your Jenkins jcli job param - Get parameters of the job of your Jenkins jcli job search - Print the job of your Jenkins jcli job stop - Stop a job build in your Jenkins jcli job type - Print the types of job which in your Jenkins  </description>
+Options  -h, --help help for job -o, --output string Format the output (default &amp;quot;json&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job artifact</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_artifact/</guid>
       <description>jcli job artifact Print the artifact list of target job
 Synopsis Print the artifact list of target job
-jcli job artifact &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --columns string The columns of table (default &amp;quot;Name,Path,Size&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for artifact --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job artifact &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --columns string The columns of table (default &amp;quot;Name,Path,Size&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for artifact --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job artifact download</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_artifact_download/</guid>
       <description>jcli job artifact download Download the artifact of target job
 Synopsis Download the artifact of target job
-jcli job artifact download &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --download-dir string The directory which artifact will be downloaded -h, --help help for download -i, --id string ID of the job artifact --progress Whether show the progress (default true)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job artifact download &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --download-dir string The directory which artifact will be downloaded -h, --help help for download -i, --id string ID of the job artifact --progress Whether show the progress (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job build</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_build/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_build/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_build/</guid>
       <description>jcli job build Build the job of your Jenkins
 Synopsis Build the job of your Jenkins. You need to give the parameters if your pipeline has them. Learn more about it from https://jenkins.io/doc/book/pipeline/syntax/#parameters.
-jcli job build &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for build --param string Parameters of the job which is JSON format --param-entry stringArray Parameters of the job which are the entry format, for example: --param-entry name=value  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job build &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for build --param string Parameters of the job which is JSON format --param-entry stringArray Parameters of the job which are the entry format, for example: --param-entry name=value  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job create</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_create/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_create/</guid>
-      <description> jcli job create Create a job in your Jenkins
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_create/</guid>
+      <description>jcli job create Create a job in your Jenkins
 Synopsis Create a job in your Jenkins
-jcli job create &amp;lt;jobName&amp;gt; [flags]  Options  --copy string Copy an exists job -h, --help help for create --type string Which type do you want to create  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+jcli job create &amp;lt;jobName&amp;gt; [flags]  Options  --copy string Copy an exists job -h, --help help for create --type string Which type do you want to create  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job delete</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_delete/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_delete/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_delete/</guid>
       <description> jcli job delete Delete a job in your Jenkins
 Synopsis Delete a job in your Jenkins
-jcli job delete &amp;lt;jobName&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+jcli job delete [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+    </item>
+    
+    <item>
+      <title>jcli job disable</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_disable/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_disable/</guid>
+      <description> jcli job disable Disable a job in your Jenkins
+Synopsis Disable a job in your Jenkins
+jcli job disable [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for disable  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli job edit</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_edit/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_edit/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_edit/</guid>
       <description>jcli job edit Edit the job of your Jenkins
-Synopsis Edit the job of your Jenkins. We only support to edit the pipeline job.
-jcli job edit &amp;lt;jobName&amp;gt; [flags]  Options  -f, --filename string Filename to files to use to replace pipeline -h, --help help for edit -s, --script string Script to use to replace pipeline. Use script first if you give filename at the meantime.  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+Synopsis Edit the job of your Jenkins. We only support to edit the pipeline job. Official Pipeline syntax document is here https://jenkins.io/doc/book/pipeline/syntax/
+notepad is the default editor of Windows, vim is the default editor of unix. But if the environment variable &amp;ldquo;VISUAL&amp;rdquo; or &amp;ldquo;EDITOR&amp;rdquo; exists, jcli will take it. For example, you can set it under unix like this: export VISUAL=vi</description>
+    </item>
+    
+    <item>
+      <title>jcli job enable</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_enable/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_enable/</guid>
+      <description> jcli job enable Enable a job in your Jenkins
+Synopsis Enable a job in your Jenkins
+jcli job enable [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for enable  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli job history</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_history/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_history/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_history/</guid>
       <description>jcli job history Print the history of job in your Jenkins
 Synopsis Print the history of job in your Jenkins
-jcli job history &amp;lt;jobName&amp;gt; [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,Building,Result&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for history --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job history &amp;lt;jobName&amp;gt; [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,Building,Result&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for history --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job input</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_input/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_input/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_input/</guid>
       <description> jcli job input Input a job in your Jenkins
 Synopsis Input a job in your Jenkins
-jcli job input &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --action string The action whether you want to process or abort. -h, --help help for input  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+jcli job input &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  --action string The action whether you want to process or abort. -h, --help help for input  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli job log</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_log/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_log/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_log/</guid>
       <description>jcli job log Print the job&amp;rsquo;s log of your Jenkins
 Synopsis Print the job&amp;rsquo;s log of your Jenkins It&amp;rsquo;ll print the log text of the last build if you don&amp;rsquo;t give the build id.
-jcli job log &amp;lt;jobName&amp;gt; [buildID] [flags]  Options  -h, --help help for log -s, --history int Specific build history of log (default -1) -i, --interval int Interval of watch (default 1) -w, --watch Watch the job logs  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job log [flags]  Examples jcli job log &amp;lt;jobName&amp;gt; [buildID] jcli job log &amp;lt;jobName&amp;gt; --history 1 jcli job log &amp;lt;jobName&amp;gt; --watch  Options  -h, --help help for log -s, --history int Specific build history of log (default -1) -i, --interval int Interval of watch (default 1) -w, --watch Watch the job logs  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job param</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_param/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_param/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_param/</guid>
       <description>jcli job param Get parameters of the job of your Jenkins
 Synopsis Get parameters of the job of your Jenkins
-jcli job param &amp;lt;jobName&amp;gt; [flags]  Options  --filter stringArray Filter for the list by fields -h, --help help for param --indent Output with indent --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job param &amp;lt;jobName&amp;gt; [flags]  Options  --filter stringArray Filter for the list by fields -h, --help help for param --indent Output with indent --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job search</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_search/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_search/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_search/</guid>
       <description>jcli job search Print the job of your Jenkins
 Synopsis Print the job of your Jenkins
-jcli job search [flags]  Examples jcli job search [keyword] --name keyword --type Folder  Options  --columns string The columns of table (default &amp;quot;Name,DisplayName,Type,URL&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for search --limit int The list of items limit (default 50) --name string The name of plugin for search --no-headers When using the default output format, don&#39;t print headers (default print headers) --start int The list of items offset --type string The type of plugin for search  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job search [flags]  Examples jcli job search [keyword] --name keyword --type Folder  Options  --columns string The columns of table (default &amp;quot;Name,DisplayName,Type,URL&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for search --limit int The list of items limit (default 50) --name string The name of items for search --no-headers When using the default output format, don&#39;t print headers (default print headers) --parent string The parent of items for search --start int The list of items offset --type string The type of items for search  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli job stop</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_stop/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_stop/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_stop/</guid>
       <description> jcli job stop Stop a job build in your Jenkins
 Synopsis Stop a job build in your Jenkins
-jcli job stop &amp;lt;jobName&amp;gt; [buildNumber] [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for stop  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
+jcli job stop &amp;lt;jobName&amp;gt; [buildNumber] [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for stop  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) -o, --output string Format the output (default &amp;quot;json&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli job - Manage the job of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli job type</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_job_type/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_job_type/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_job_type/</guid>
       <description>jcli job type Print the types of job which in your Jenkins
 Synopsis Print the types of job which in your Jenkins
-jcli job type [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,Class&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for type --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli job type [flags]  Options  --columns string The columns of table (default &amp;quot;DisplayName,Class&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for type --no-headers When using the default output format, don&#39;t print headers (default print headers)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli open</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_open/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_open/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_open/</guid>
-      <description> jcli open Open your Jenkins with a browser
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_open/</guid>
+      <description>jcli open Open your Jenkins with a browser
 Synopsis Open your Jenkins with a browser
-jcli open [flags]  Examples jcli open -n [config name]  Options  -c, --config Open the configuration page of Jenkins -h, --help help for open -i, --interactive Interactive mode  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
+jcli open [flags]  Examples jcli open -n [config name] Open Jenkins with a specific browser is useful in some use cases. For example, one browser has a proxy setting. There are two ways to achieve this: jcli open --browser &amp;quot;Google-Chrome&amp;quot; JCLI_BROWSER=&amp;quot;Google Chrome&amp;quot; jcli open  Options  -b, --browser string Open Jenkins with a specific browser -c, --config Open the configuration page of Jenkins -h, --help help for open -i, --interactive Interactive mode  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin/</guid>
       <description> jcli plugin Manage the plugins of Jenkins
 Synopsis Manage the plugins of Jenkins
-Examples  jcli plugin list jcli plugin search github jcli plugin check  Options  -h, --help help for plugin  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli plugin check - Check update center server jcli plugin create - Create a plugin project from the archetypes jcli plugin download - Download the plugins jcli plugin install - Install the plugins jcli plugin list - Print all the plugins which are installed jcli plugin open - Open update center server in browser jcli plugin release - Release current plugin project jcli plugin search - Print the plugins of your Jenkins jcli plugin trend - Show the trend of the plugin jcli plugin uninstall - Uninstall the plugins jcli plugin upgrade - Upgrade the specific plugin jcli plugin upload - Upload a plugin to your Jenkins  </description>
+Examples  jcli plugin list jcli plugin search github jcli plugin check  Options  -h, --help help for plugin  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli plugin build - Build the Jenkins plugin project jcli plugin check - Check update center server jcli plugin create - Create a plugin project from the archetypes jcli plugin download - Download the plugins jcli plugin install - Install the plugins jcli plugin list - Print all the plugins which are installed jcli plugin open - Open update center server in browser jcli plugin release - Release current plugin project jcli plugin search - Print the plugins of your Jenkins jcli plugin trend - Show the trend of the plugin jcli plugin uninstall - Uninstall the plugins jcli plugin upgrade - Upgrade the specific plugin jcli plugin upload - Upload a plugin to your Jenkins  </description>
+    </item>
+    
+    <item>
+      <title>jcli plugin build</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_build/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_build/</guid>
+      <description>jcli plugin build Build the Jenkins plugin project
+Synopsis Build the Jenkins plugin project The default behaviour is &amp;ldquo;mvn clean package -DskipTests -Dmaven.test.skip&amp;rdquo;
+jcli plugin build [flags]  Options  --debug-output If you want the maven output the debug info -h, --help help for build  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin check</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_check/</guid>
       <description> jcli plugin check Check update center server
 Synopsis Check update center server
-jcli plugin check [flags]  Options  -h, --help help for check  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin check [flags]  Options  -h, --help help for check  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
     </item>
     
     <item>
       <title>jcli plugin create</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</guid>
-      <description> jcli plugin create Create a plugin project from the archetypes
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_create/</guid>
+      <description>jcli plugin create Create a plugin project from the archetypes
 Synopsis Create a plugin project from the archetypes Plugin tutorial is here https://jenkins.io/doc/developer/tutorial/
-jcli plugin create [flags]  Options  --debug-output If you want the maven output the debug info -h, --help help for create  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin create [flags]  Options  --debug-output If you want the maven output the debug info -h, --help help for create  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin download</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_download/</guid>
       <description>jcli plugin download Download the plugins
 Synopsis Download the plugins which contain the target plugin and its dependencies
-jcli plugin download &amp;lt;keyword&amp;gt; [flags]  Options  -h, --help help for download --show-progress If you want to show the progress of download a plugin (default true) --skip-dependency If you want to skip download dependency of plugin --skip-optional If you want to skip download optional dependency of plugin (default true) --use-mirror If you want to download plugin from a mirror site (default true)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin download [flags]  Examples download localization-zh-cn  Options  --download-dir string The directory which you want to download to -h, --help help for download --show-progress If you want to show the progress of download a plugin (default true) --skip-dependency If you want to skip download dependency of plugin --skip-optional If you want to skip download optional dependency of plugin (default true) --use-mirror If you want to download plugin from a mirror site (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin install</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_install/</guid>
       <description>jcli plugin install Install the plugins
 Synopsis Install the plugins Allow you to install a plugin with or without the version
-jcli plugin install [pluginName] [flags]  Examples jcli plugin install localization-zh-cn jcli plugin install localization-zh-cn@1.0.9  Options  -h, --help help for install --show-progress If you want to show the progress of download a plugin (default true) --suite string Suite of plugins --use-mirror If you want to download plugin from a mirror site (default true)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin install [pluginName] [flags]  Examples jcli plugin install localization-zh-cn jcli plugin install localization-zh-cn@1.0.9  Options  -h, --help help for install --show-progress If you want to show the progress of download a plugin (default true) --suite string Suite of plugins --use-mirror If you want to download plugin from a mirror site (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin list</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_list/</guid>
       <description>jcli plugin list Print all the plugins which are installed
 Synopsis Print all the plugins which are installed
-jcli plugin list [flags]  Examples  jcli plugin list --filter name=github jcli plugin list --filter hasUpdate jcli plugin list --no-headers  Options  --columns string The columns of table (default &amp;quot;ShortName,Version,HasUpdate&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin list [flags]  Examples  jcli plugin list --filter name=github jcli plugin list --filter hasUpdate jcli plugin list --no-headers  Options  --columns string The columns of table (default &amp;quot;ShortName,Version,HasUpdate&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin open</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_open/</guid>
       <description> jcli plugin open Open update center server in browser
 Synopsis Open update center server in browser
-jcli plugin open [flags]  Options  -h, --help help for open  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin open [flags]  Options  -b, --browser string Open Jenkins with a specific browser -h, --help help for open  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
     </item>
     
     <item>
       <title>jcli plugin release</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_release/</guid>
       <description>jcli plugin release Release current plugin project
 Synopsis Release current plugin project
-jcli plugin release [flags]  Options  --batch Run in non-interactive (batch) (default true) --debug-output If you want the maven output the debug info -h, --help help for release --perform Add mvn command release:perform (default true) --prepare Add mvn command release:prepare (default true) --skip-tests Skip running tests (default true)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin release [flags]  Options  --batch Run in non-interactive (batch) (default true) --debug-output If you want the maven output the debug info -h, --help help for release --perform Add mvn command release:perform (default true) --prepare Add mvn command release:prepare (default true) --skip-tests Skip running tests (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin search</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_search/</guid>
       <description>jcli plugin search Print the plugins of your Jenkins
 Synopsis Print the plugins of your Jenkins
-jcli plugin search &amp;lt;keyword&amp;gt; [flags]  Options  --filter stringArray Filter for the list by fields -h, --help help for search --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin search &amp;lt;keyword&amp;gt; [flags]  Options  --filter stringArray Filter for the list by fields -h, --help help for search --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin trend</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_trend/</guid>
       <description> jcli plugin trend Show the trend of the plugin
 Synopsis Show the trend of the plugin
-jcli plugin trend &amp;lt;pluginName&amp;gt; [flags]  Options  -h, --help help for trend  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin trend &amp;lt;pluginName&amp;gt; [flags]  Options  -h, --help help for trend  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
     </item>
     
     <item>
       <title>jcli plugin uninstall</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_uninstall/</guid>
       <description> jcli plugin uninstall Uninstall the plugins
 Synopsis Uninstall the plugins
-jcli plugin uninstall [pluginName] [flags]  Options  -h, --help help for uninstall  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin uninstall [pluginName] [flags]  Options  -h, --help help for uninstall  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
     </item>
     
     <item>
       <title>jcli plugin upgrade</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</guid>
-      <description> jcli plugin upgrade Upgrade the specific plugin
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_upgrade/</guid>
+      <description>jcli plugin upgrade Upgrade the specific plugin
 Synopsis Upgrade the specific plugin
-jcli plugin upgrade [plugin name] [flags]  Examples jcli plugin upgrade [tab][tab]  Options  --filter stringArray Filter for the list, like: name=foo -h, --help help for upgrade  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli plugin - Manage the plugins of Jenkins  </description>
+jcli plugin upgrade [plugin name] [flags]  Examples jcli plugin upgrade [tab][tab]  Options  --all Upgrade all plugins for updated --filter stringArray Filter for the list, like: name=foo -h, --help help for upgrade  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli plugin upload</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_plugin_upload/</guid>
       <description>jcli plugin upload Upload a plugin to your Jenkins
 Synopsis Upload a plugin from local filesystem or remote URL to your Jenkins
-jcli plugin upload [flags]  Examples  jcli plugin upload --remote https://server/sample.hpi jcli plugin upload sample.hpi jcli plugin upload sample.hpi --show-progress=false  Options  -h, --help help for upload -r, --remote string Remote plugin URL --remote-jenkins string Remote Jenkins which will find from config list --remote-password string Password of remote plugin URL --remote-user string User of remote plugin URL --show-progress Whether show the upload progress (default true) --skip-posthook Whether skip the post command hook --skip-prehook Whether skip the previous command hook  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli plugin upload [flags]  Examples  jcli plugin upload --remote https://server/sample.hpi jcli plugin upload sample.hpi jcli plugin upload sample.hpi --show-progress=false  Options  -f, --file string The plugin file path which should end with .hpi -h, --help help for upload -r, --remote string Remote plugin URL --remote-jenkins string Remote Jenkins which will find from config list --remote-password string Password of remote plugin URL --remote-user string User of remote plugin URL --show-progress Whether show the upload progress (default true) --skip-posthook Whether skip the post command hook --skip-prehook Whether skip the previous command hook  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli queue</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_queue/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_queue/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_queue/</guid>
       <description> jcli queue Manage the queue of your Jenkins
 Synopsis Manage the queue of your Jenkins
-Options  -h, --help help for queue  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli queue cancel - Cancel the queue items of your Jenkins jcli queue list - Print the queue of your Jenkins  </description>
+Options  -h, --help help for queue  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli queue cancel - Cancel the queue items of your Jenkins jcli queue list - Print the queue of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli queue cancel</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_queue_cancel/</guid>
       <description> jcli queue cancel Cancel the queue items of your Jenkins
 Synopsis Cancel the queue items of your Jenkins
-jcli queue cancel &amp;lt;id&amp;gt; [flags]  Options  -h, --help help for cancel  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli queue - Manage the queue of your Jenkins  </description>
+jcli queue cancel &amp;lt;id&amp;gt; [flags]  Options  -h, --help help for cancel  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli queue - Manage the queue of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli queue list</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_queue_list/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_queue_list/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_queue_list/</guid>
       <description>jcli queue list Print the queue of your Jenkins
 Synopsis Print the queue of your Jenkins
-jcli queue list [flags]  Options  --columns string The columns of table (default &amp;quot;ID,Why,URL&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli queue list [flags]  Options  --columns string The columns of table (default &amp;quot;ID,Why,URL&amp;quot;) --filter stringArray Filter for the list by fields -h, --help help for list --no-headers When using the default output format, don&#39;t print headers (default print headers) -o, --output string Format the output, supported formats: table, json, yaml (default &amp;quot;table&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli restart</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_restart/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_restart/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_restart/</guid>
-      <description> jcli restart Restart your Jenkins
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_restart/</guid>
+      <description>jcli restart Restart your Jenkins
 Synopsis Restart your Jenkins
-jcli restart [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for restart  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
+jcli restart [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for restart -s, --safe Puts Jenkins into the quiet mode, wait for existing builds to be completed, and then restart Jenkins (default true)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli shell</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_shell/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_shell/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_shell/</guid>
-      <description> jcli shell Create a sub shell so that changes to a specific Jenkins remain local to the shell.
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_shell/</guid>
+      <description>jcli shell Create a sub shell so that changes to a specific Jenkins remain local to the shell.
 Synopsis Create a sub shell so that changes to a specific Jenkins remain local to the shell.
-jcli shell [&amp;lt;name&amp;gt;] [flags]  Options  -h, --help help for shell  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins  </description>
+jcli shell [&amp;lt;name&amp;gt;] [flags]  Options  -h, --help help for shell  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli user</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_user/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_user/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_user/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_user/</guid>
       <description> jcli user Print the user of your Jenkins
 Synopsis Print the user of your Jenkins
-jcli user [flags]  Options  -h, --help help for user -o, --output string Format the output (default &amp;quot;json&amp;quot;)  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - jcli is a tool which could help you with your multiple Jenkins jcli user create - Create a user for your Jenkins jcli user delete - Delete a user for your Jenkins jcli user edit - Edit the user of your Jenkins jcli user token - Token the user of your Jenkins  </description>
+jcli user [flags]  Options  -h, --help help for user -o, --output string Format the output (default &amp;quot;json&amp;quot;)  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins jcli user create - Create a user for your Jenkins jcli user delete - Delete a user for your Jenkins jcli user edit - Edit the user of your Jenkins jcli user token - Token the user of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli user create</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_user_create/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_create/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_user_create/</guid>
       <description> jcli user create Create a user for your Jenkins
 Synopsis Create a user for your Jenkins
-jcli user create &amp;lt;username&amp;gt; [password] [flags]  Options  -h, --help help for create  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
+jcli user create &amp;lt;username&amp;gt; [password] [flags]  Options  -h, --help help for create  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli user delete</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_user_delete/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_delete/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_user_delete/</guid>
       <description> jcli user delete Delete a user for your Jenkins
 Synopsis Delete a user for your Jenkins
-jcli user delete &amp;lt;username&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
+jcli user delete &amp;lt;username&amp;gt; [flags]  Options  -b, --batch Batch mode, no need confirm -h, --help help for delete  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
     </item>
     
     <item>
       <title>jcli user edit</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_user_edit/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_edit/</guid>
-      <description> jcli user edit Edit the user of your Jenkins
-Synopsis Edit the user of your Jenkins
-jcli user edit [flags]  Options  -d, --desc string Edit the description -h, --help help for edit  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli user - Print the user of your Jenkins  </description>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_user_edit/</guid>
+      <description>jcli user edit Edit the user of your Jenkins
+Synopsis Edit the user of your Jenkins notepad is the default editor of Windows, vim is the default editor of unix. But if the environment variable &amp;ldquo;VISUAL&amp;rdquo; or &amp;ldquo;EDITOR&amp;rdquo; exists, jcli will take it. For example, you can set it under unix like this: export VISUAL=vi
+jcli user edit [flags]  Options  -d, --desc string Edit the description -h, --help help for edit  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
     </item>
     
     <item>
       <title>jcli user token</title>
-      <link>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</link>
-      <pubDate>Sun, 16 Feb 2020 09:32:09 +0000</pubDate>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_user_token/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
       
-      <guid>http://jcli.jenkins-zh.cn/commands/jcli_user_token/</guid>
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_user_token/</guid>
       <description>jcli user token Token the user of your Jenkins
 Synopsis Token the user of your Jenkins
-jcli user token [flags]  Examples jcli user token -g  Options  -g, --generate Generate the token -h, --help help for token -n, --name string Name of the token --target-user string The target user of the new token  Options inherited from parent commands  --configFile string An alternative config file --debug Print the output into debug.</description>
+jcli user token [flags]  Examples jcli user token -g  Options  -g, --generate Generate the token -h, --help help for token -n, --name string Name of the token --target-user string The target user of the new token  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.</description>
+    </item>
+    
+    <item>
+      <title>jcli version</title>
+      <link>https://jcli.jenkins-zh.cn/commands/jcli_version/</link>
+      <pubDate>Mon, 27 Apr 2020 06:50:25 +0000</pubDate>
+      
+      <guid>https://jcli.jenkins-zh.cn/commands/jcli_version/</guid>
+      <description> jcli version Print the user of your Jenkins
+Synopsis Print the user of your Jenkins
+jcli version [flags]  Options  --changelog Output the changelog of current version -h, --help help for version --show-latest Output the latest version  Options inherited from parent commands  --config-load If load a default config file (default true) --configFile string An alternative config file --debug Print the output into debug.html --doctor Run the diagnose for current command --insecureSkipVerify If skip insecure skip verify (default true) -j, --jenkins string Select a Jenkins server for this time --logger-level string Logger level which could be: debug, info, warn, error (default &amp;quot;warn&amp;quot;) --proxy string The proxy of connection to Jenkins --proxy-auth string The auth of proxy of connection to Jenkins --proxy-disable Disable proxy setting --token string The token of Jenkins --url string The URL of Jenkins --username string The username of Jenkins  SEE ALSO  jcli - Jenkins CLI written by golang which could help you with your multiple Jenkins  </description>
     </item>
     
   </channel>
